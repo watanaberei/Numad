@@ -1,0 +1,153 @@
+<div class="grid">
+  <div class="o o1"></div>
+  <div class="g m">
+    <div class="p p1"></div>
+    <div class="c1">
+      <div class="col1">m-c1-col1</div>
+      <div class="col2">m-c1-col2</div>
+      <div class="col3">m-c1-col3</div>
+    </div>
+    <div class="c2">
+      <div class="col1">m-c2-col1</div>
+      <div class="col2">m-c2-col2</div>
+      <div class="col3">m-c2-col3</div>
+    </div>
+    <div class="c3">
+      <div class="col1">m-c3-col1</div>
+      <div class="col2">m-c3-col2</div>
+      <div class="col3">m-c3-col3</div>
+    </div>
+    <div class="c4">
+      <div class="col1">m-c4-col1</div>
+      <div class="col2">m-c4-col2</div>
+      <div class="col3">m-c4-col3</div>
+    </div>
+    <div class="c5">
+      <div class="col1">m-c5-col1</div>
+      <div class="col2">m-c5-col2</div>
+      <div class="col3">m-c5-col3</div>
+    </div>
+    <div class="c6">
+      <div class="col1">m-c6-col1</div>
+      <div class="col2">m-c6-col2</div>
+      <div class="col3">m-c6-col3</div>
+    </div>
+    <div class="p p2"></div>
+  </div>
+
+  <div class="d d1"></div>
+
+  <div class="g s">
+    <div class="p p3"></div>
+    <div class="c1">
+      <div class="col1">s-c1-col1</div>
+      <div class="col2">s-c1-col2</div>
+      <div class="col3">s-c1-col3</div>
+    </div>
+    <div class="c2">
+      <div class="col1">s-c2-col1</div>
+      <div class="col2">s-c2-col2</div>
+      <div class="col3">s-c2-col3</div>
+    </div>
+    <div class="p p4"></div>
+  </div>
+  <div class="o o2"></div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="grid platinum">
+  <!-- platinum refers to the grid theme type, where they may be more than one grid type configured -->
+
+ <div class="m">
+    <!-- SCHEMA -->
+    <div class="r">
+      <div class="c1-c2">
+        when there is a dash (-), it means from begining position, to, ending
+        position
+      </div>
+      <div class="c2-c4">
+        any overlaps in columns is treated like a row in a row
+      </div>
+      <div class="c6">
+        specifiying a cluster means to cover all of the specified cluster
+      </div>
+      <div class="c1">cover next column 1</div>
+      <div class="-c5col2">
+        adding a dash before any column, cluster,grid, main, or secondary acts
+        as something similar to flex where it covers the span of the next
+        specified value.
+      </div>
+    </div>
+
+    <!-- RULES -->
+    <div class="r c1-c6">
+      Every c element come with columns that have the same name: col1, col2,
+      col3.
+    </div>
+    <div class="r c1-c6">
+      Every c element come with columns that have the same name: col1, col2,
+      col3.
+    </div>
+    <div class="r c1col2-c6col2">
+      Every c element come with columns that have the same name: col1, col2,
+      col3. To specify which column, you lead with the c#, followed by the col#.
+    </div>
+    <div class="r c1-c6">
+      No r (row) class results to its default state where the div stays in the
+      row if there is enough space but will wrap to next row if there is no
+      space
+    </div>
+
+    <!-- EXCEPTION USECASE -->
+    <div class="r max">
+      max would cover all columns (col) of where the class is nested inincluding
+      the padding (p) and outer (o).
+    </div>
+    <div class="r full">
+      full would cover all columns (col) of where the class is nested in.
+    </div>
+    <div class="r half">
+      half would cover half of columns (col) of where the class is nested in.
+    </div>
+
+    <!-- EXAMPLE: ALL IN ONE ROW -->
+    <div class="r">
+      <div class="o1">
+        any o (outer) element is off limits unless specified like this or during
+        a exception usecase
+      </div>
+      <div class="p1">
+        any p is not encourage to use but is allowed when specified or during a
+        exception usecase
+      </div>
+
+      <div class="c1">covers all c1</div>
+      <div class="c2">covers all c2</div>
+      <div class="c3">covers all c3</div>
+      <div class="c4">covers all c4</div>
+      <div class="c5">covers all c5</div>
+      <div class="c6">covers all c6</div>
+      <div class="p2">
+        any p is not encourage to use but is allowed when specified or during a
+        exception usecase
+      </div>
+    </div>
+
+  </div>
+   
+
+
+  <div class="s">
+    <!-- ERROR CASE -->
+    <div>
+      When there are no specified class, it defaults to a new row that start with the first available column, to, the last available column within the parent element.
+    </div> 
+  </div>  
+</div>
