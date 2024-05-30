@@ -1,0 +1,128 @@
+.eyebrow-headline,
+.eyebrow-headline * {
+  box-sizing: border-box;
+}
+.eyebrow-headline {
+  color: #e1ecf4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+.eyebrow-headline .eyebrow {
+  /* padding: 12px 0px 12px 0px; */
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.eyebrow-headline .eyebrow .icon-container {
+  /* padding: 6px 0px 6px 0px; */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eyebrow-headline .eyebrow .icon-container .icon {
+  background: #e1ecf4;
+  border-radius: 333px;
+  /* padding: 9px 15px 9px 18px; */
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.eyebrow-headline .eyebrow .text {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eyebrow-headline .eyebrow .text .title {
+  flex-shrink: 0;
+  width: 77px;
+  height: 24px;
+  position: relative;
+}
+/* .eyebrow-headline .eyebrow .text span {
+  background: linear-gradient(to left, #e1ecf4, #e1ecf4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "HelveticaNeue-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+} */
+.eyebrow-headline .eyebrow .text .subtitle {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.eyebrow-headline .label {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+/* .nearby {
+  background: linear-gradient(to left, #e1ecf4, #e1ecf4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+}
+.coffee-shop {
+  background: linear-gradient(to left, #e1ecf4, #e1ecf4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+}
+
+._12-mi-away {
+  background: linear-gradient(to left, #e1ecf4, #e1ecf4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: right;
+  font-family: "HelveticaNeue-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  position: relative;
+} */

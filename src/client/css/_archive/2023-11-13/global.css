@@ -1,0 +1,16 @@
+.center {
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    padding: 10px;
+  }
+
+  input,
+  input[type="text"]
+   {
+      /* width: 100%; */
+      -webkit-box-sizing : border-box;
+      -moz-box-sizing : border-box;
+      box-sizing : border-box;
+      height: 35px;
+  }

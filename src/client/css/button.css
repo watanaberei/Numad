@@ -1,0 +1,456 @@
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+
+
+:root {
+	/* Default theme variables; these will be overridden by JavaScript */
+	--btnPaddingX: 1rem;
+	--btnPaddingY: 0.5rem;
+	--btnFontFamily: 'Arial', sans-serif;
+	--btnFontSize: 1rem; /* This is static; for dynamic responsive sizes, JS needs to calculate and set */
+	--btnFontWeight: 400;
+	--btnLineHeight: 1.5;
+	--btnColor: #000;
+	--btnLetterSpacing: normal;
+	--btnBg: transparent;
+	--btnBorderWidth: 1px;
+	--btnBorderColor: transparent;
+	--btnBorderRadius: 0.25rem;
+	--btnHoverBorderColor: initial;
+	--btnBoxShadow: none;
+	--btnDisabledOpacity: 0.65;
+	--btnFocusBoxShadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+	--iconSpacing: 0.5rem;
+  }
+  
+  .btn {
+	padding: var(--btnPaddingY) var(--btnPaddingX);
+	font-family: var(--btnFontFamily);
+	font-size: var(--btnFontSize);
+	font-weight: var(--btnFontWeight);
+	line-height: var(--btnLineHeight);
+	color: var(--btnColor);
+	letter-spacing: var(--btnLetterSpacing);
+	background-color: var(--btnBg);
+	border-width: var(--btnBorderWidth);
+	border-color: var(--btnBorderColor);
+	border-radius: var(--btnBorderRadius);
+	box-shadow: var(--btnBoxShadow);
+  }
+  
+  .btn:hover {
+	border-color: var(--btnHoverBorderColor);
+  }
+  
+  .btn:disabled {
+	opacity: var(--btnDisabledOpacity);
+  }
+  
+  .btn:focus {
+	box-shadow: var(--btnFocusBoxShadow);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  :root {
+    /* Define default values for CSS variables */
+    --primary: #007bff;
+    --success: #28a745;
+    --danger: #dc3545;
+    /* Add more as needed */
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Define other button styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* Additional classes for btn-primary, btn-warning, etc., can be defined here,
+	 applying specific styles or overrides as needed based on the theme variables. */
+  
+
+
+
+
+
+
+/* 
+$btn-color:                   var(--#{$prefix}body-color);
+$btn-padding-y:               $input-btn-padding-y;
+$btn-padding-x:               $input-btn-padding-x;
+$btn-font-family:             $input-btn-font-family;
+$btn-font-size:               $input-btn-font-size;
+$btn-line-height:             $input-btn-line-height;
+$btn-letter-spacing:          $letter-spacing-base; // Boosted mod
+$btn-white-space:             null; // Set to `nowrap` to prevent text wrapping
+
+$btn-padding-y-sm:            $input-btn-padding-y-sm;
+$btn-padding-x-sm:            $input-btn-padding-x-sm;
+$btn-font-size-sm:            $input-btn-font-size-sm;
+$btn-line-height-sm:          $line-height-sm; // Boosted mod
+$btn-letter-spacing-sm:       $letter-spacing-base; // Boosted mod
+
+$btn-padding-y-lg:            $input-btn-padding-y-lg;
+$btn-padding-x-lg:            $input-btn-padding-x-lg;
+$btn-font-size-lg:            $input-btn-font-size-lg;
+$btn-line-height-lg:          $h5-line-height; // Boosted mod
+$btn-letter-spacing-lg:       $letter-spacing-base * 2; // Boosted mod
+
+$btn-border-width:            $input-btn-border-width;
+
+$btn-font-weight:             $font-weight-bold;
+$btn-box-shadow:              null;
+$btn-focus-width:             $input-btn-focus-width;
+$btn-focus-box-shadow:        0 0 0 $btn-focus-width $white;
+$btn-disabled-opacity:        1;
+$btn-active-box-shadow:       null;
+
+$btn-link-color:              var(--#{$prefix}link-color);
+$btn-link-hover-color:        var(--#{$prefix}link-hover-color);
+$btn-link-disabled-color:     $gray-500;
+// Boosted mod: no `$btn-link-focus-shadow-rgb`
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           var(--#{$prefix}border-radius);
+$btn-border-radius-sm:        var(--#{$prefix}border-radius-sm);
+$btn-border-radius-lg:        var(--#{$prefix}border-radius-lg);
+
+$btn-transition:              $transition-focus; // Boosted mod
+
+
+
+
+
+
+
+
+
+
+
+@mixin button-variant(
+  $background,
+  $border,
+  $color: color-contrast($background),
+  $hover-background: $black, // Boosted mod
+  $hover-border: $black, // Boosted mod
+  $hover-color: color-contrast($hover-background),
+  $active-background: $primary, // Boosted mod
+  $active-border: $primary, // Boosted mod
+  $active-color: color-contrast($active-background),
+  $disabled-background: $gray-500, // Boosted mod
+  $disabled-border: $gray-500, // Boosted mod
+  $disabled-color: $white, // Boosted mod
+  $btn-focus-shadow-color: $white // Boosted mod
+) {
+  --#{$prefix}btn-color: #{$color};
+  --#{$prefix}btn-bg: #{$background};
+  --#{$prefix}btn-border-color: #{$border};
+  --#{$prefix}btn-hover-color: #{$hover-color};
+  --#{$prefix}btn-hover-bg: #{$hover-background};
+  --#{$prefix}btn-hover-border-color: #{$hover-border};
+  --#{$prefix}btn-focus-shadow-rgb: #{$btn-focus-shadow-color}; // Boosted mod
+  --#{$prefix}btn-active-color: #{$active-color};
+  --#{$prefix}btn-active-bg: #{$active-background};
+  --#{$prefix}btn-active-border-color: #{$active-border};
+  // Boosted mod: no definition of --#{$prefix}btn-active-shadow
+  --#{$prefix}btn-disabled-color: #{$disabled-color};
+  --#{$prefix}btn-disabled-bg: #{$disabled-background};
+  --#{$prefix}btn-disabled-border-color: #{$disabled-border};
+}
+@mixin button-size($padding-y, $padding-x, $font-size, $border-radius, $line-height: null, $icon-spacing: $btn-icon-padding-x, $letter-spacing: $letter-spacing-base) {
+	--#{$prefix}icon-spacing: #{$icon-spacing}; // Boosted mod: used for icons
+	--#{$prefix}btn-padding-y: #{$padding-y};
+	--#{$prefix}btn-padding-x: #{$padding-x};
+	@include rfs($font-size, --#{$prefix}btn-font-size);
+	--#{$prefix}btn-line-height: #{$line-height}; // Boosted mod
+	--#{$prefix}btn-letter-spacing: #{$letter-spacing}; // Boosted mod
+	--#{$prefix}btn-border-radius: #{$border-radius};
+  }
+  @mixin button-icon(
+  $icon,
+  $width: $spacer,
+  $height: $width,
+  $size: $width $height,
+  $pseudo: "before",
+  $selector: &,
+  $position: 50%
+) {
+  min-width: $width;
+  min-height: $height;
+
+  @at-root #{$selector} {
+    &::#{$pseudo} {
+      display: block;
+      min-width: inherit;
+      min-height: inherit;
+      content: "";
+      background-color: currentcolor;
+      mask: #{$icon} no-repeat #{$position} / #{$size};
+    }
+  }
+} */
+
+
+
+
+
+
+/* 
+:root {
+	
+	--btnPaddingX: 1rem;
+	--btnPaddingY: 0.5rem;
+	--btnFontFamily: 'Arial', sans-serif;
+	--btnFontSize: 1rem; 
+	--btnFontWeight: 400;
+	--btnLineHeight: 1.5;
+	--btnColor: #000;
+	--btnLetterSpacing: normal;
+	--btnBg: transparent;
+	--btnBorderWidth: 1px;
+	--btnBorderColor: transparent;
+	--btnBorderRadius: 0.25rem;
+	--btnHoverBorderColor: initial;
+	--btnBoxShadow: none;
+	--btnDisabledOpacity: 0.65;
+	--btnFocusBoxShadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+	--iconSpacing: 0.5rem;
+  }
+  
+  .btn {
+	padding: var(--btnPaddingY) var(--btnPaddingX);
+	font-family: var(--btnFontFamily);
+	font-size: var(--btnFontSize);
+	font-weight: var(--btnFontWeight);
+	line-height: var(--btnLineHeight);
+	color: var(--btnColor);
+	letter-spacing: var(--btnLetterSpacing);
+	background-color: var(--btnBg);
+	border-width: var(--btnBorderWidth);
+	border-color: var(--btnBorderColor);
+	border-radius: var(--btnBorderRadius);
+	box-shadow: var(--btnBoxShadow);
+  }
+  
+  .btn:hover {
+	border-color: var(--btnHoverBorderColor);
+  }
+  
+  .btn:disabled {
+	opacity: var(--btnDisabledOpacity);
+  }
+  
+  .btn:focus {
+	box-shadow: var(--btnFocusBoxShadow);
+  }
+  .btn-primary,
+.btn-warning {
+  @include button-variant($primary, $primary, $active-background: $white, $active-border: $black);
+  &.btn-inverse {
+    @include button-variant($primary, $primary, $black, $white, $white, $black, $black, $white, $white, $gray-700, $gray-700, $black, $black);
+  }
+}
+
+.btn-light,
+.btn-secondary {
+  @include button-variant($white, $black, $disabled-background: $white, $disabled-border: $gray-500, $disabled-color: $gray-500);
+  &.btn-inverse {
+    @include button-variant($black, $white, $white, $white, $white, $black, $primary, $primary, $black, transparent, $gray-700, $gray-700, $black);
+  }
+}
+
+.btn-success {
+  @include button-variant($success, $success);
+  &.btn-inverse {
+    @include button-variant($success, $success, $black,  $white, $white, $black, $primary, $primary, $black, $gray-700, $gray-700, $black, $black);
+  }
+}
+
+.btn-info,
+.btn-dark {
+  @include button-variant($black, $black, $white, $white, $black, $black);
+  &.btn-inverse {
+    @include button-variant($white, $white, $black, $black, $white, $white, $primary, $primary, $black, $gray-700, $gray-700, $black, $black);
+  }
+}
+
+.btn-danger {
+  @include button-variant($danger, $danger);
+  &.btn-inverse {
+    @include button-variant($danger, $danger, $white, $white, $white, $black, $primary, $primary, $black, $gray-700, $gray-700, $black, $black);
+  }
+} */
+  
+  /* Additional classes for btn-primary, btn-warning, etc., can be defined here,
+	 applying specific styles or overrides as needed based on the theme variables. */
+  
+
+
+
+
+
+		/* @mixin button-variant(
+	$background,
+	$border,
+	$color: color-contrast($background),
+	$hover-background: $black, // Boosted mod
+	$hover-border: $black, // Boosted mod
+	$hover-color: color-contrast($hover-background),
+	$active-background: $primary, // Boosted mod
+	$active-border: $primary, // Boosted mod
+	$active-color: color-contrast($active-background),
+	$disabled-background: $gray-500, // Boosted mod
+	$disabled-border: $gray-500, // Boosted mod
+	$disabled-color: $white, // Boosted mod
+	$btn-focus-shadow-color: $white // Boosted mod
+	) {
+	--#{$prefix}btn-color: #{$color};
+	--#{$prefix}btn-bg: #{$background};
+	--#{$prefix}btn-border-color: #{$border};
+	--#{$prefix}btn-hover-color: #{$hover-color};
+	--#{$prefix}btn-hover-bg: #{$hover-background};
+	--#{$prefix}btn-hover-border-color: #{$hover-border};
+	--#{$prefix}btn-focus-shadow-rgb: #{$btn-focus-shadow-color}; // Boosted mod
+	--#{$prefix}btn-active-color: #{$active-color};
+	--#{$prefix}btn-active-bg: #{$active-background};
+	--#{$prefix}btn-active-border-color: #{$active-border};
+	// Boosted mod: no definition of --#{$prefix}btn-active-shadow
+	--#{$prefix}btn-disabled-color: #{$disabled-color};
+	--#{$prefix}btn-disabled-bg: #{$disabled-background};
+	--#{$prefix}btn-disabled-border-color: #{$disabled-border};
+	}
+	@mixin button-size($padding-y, $padding-x, $font-size, $border-radius, $line-height: null, $icon-spacing: $btn-icon-padding-x, $letter-spacing: $letter-spacing-base) {
+		--#{$prefix}icon-spacing: #{$icon-spacing}; // Boosted mod: used for icons
+		--#{$prefix}btn-padding-y: #{$padding-y};
+		--#{$prefix}btn-padding-x: #{$padding-x};
+		@include rfs($font-size, --#{$prefix}btn-font-size);
+		--#{$prefix}btn-line-height: #{$line-height}; // Boosted mod
+		--#{$prefix}btn-letter-spacing: #{$letter-spacing}; // Boosted mod
+		--#{$prefix}btn-border-radius: #{$border-radius};
+	}
+	@mixin button-icon(
+	$icon,
+	$width: $spacer,
+	$height: $width,
+	$size: $width $height,
+	$pseudo: "before",
+	$selector: &,
+	$position: 50%
+	) {
+	min-width: $width;
+	min-height: $height;
+
+	@at-root #{$selector} {
+		&::#{$pseudo} {
+		display: block;
+		min-width: inherit;
+		min-height: inherit;
+		content: "";
+		background-color: currentcolor;
+		mask: #{$icon} no-repeat #{$position} / #{$size};
+		}
+	}
+	} */
+
+
+
+
+
+
+
+
+
+
+
+
+	/* .btn-primary,
+.btn-warning {
+  @include button-variant($primary, $primary, $active-background: $white, $active-border: $black);
+  &.btn-inverse {
+    @include button-variant($primary, $primary, $black, $white, $white, $black, $black, $white, $white, $gray-700, $gray-700, $black, $black);
+  }
+}
+
+.btn-light,
+.btn-secondary {
+  @include button-variant($white, $black, $disabled-background: $white, $disabled-border: $gray-500, $disabled-color: $gray-500);
+  &.btn-inverse {
+    @include button-variant($black, $white, $white, $white, $white, $black, $primary, $primary, $black, transparent, $gray-700, $gray-700, $black);
+  }
+} */
+
+/* .btn-success {
+  @include button-variant($success, $success);
+  &.btn-inverse {
+    @include button-variant($success, $success, $black,  $white, $white, $black, $primary, $primary, $black, $gray-700, $gray-700, $black, $black);
+  }
+}
+
+.btn-info,
+.btn-dark {
+  @include button-variant($black, $black, $white, $white, $black, $black);
+  &.btn-inverse {
+    @include button-variant($white, $white, $black, $black, $white, $white, $primary, $primary, $black, $gray-700, $gray-700, $black, $black);
+  }
+}
+
+.btn-danger {
+  @include button-variant($danger, $danger);
+  &.btn-inverse {
+    @include button-variant($danger, $danger, $white, $white, $white, $black, $primary, $primary, $black, $gray-700, $gray-700, $black, $black);
+  }
+}
+Boosted sitemap & information
+Links
+Home
+Docs
+Examples
+Design guidelines
+Guides
+Getting started
+Webpack
+Parcel
+Vite
+Projects
+Boosted 5
+Boosted 4
+Bootstrap
+Pre-release on Netlify
+Community */

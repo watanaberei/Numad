@@ -1,0 +1,83 @@
+
+
+/* .marker {
+    z-index: 3;
+  background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+} */
+/* #geocoder { background-color:white;} */
+
+
+
+.marker {
+    z-index: 3;
+  /* background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');  */
+    background-size: cover;
+  background-color: #FF5361;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;    
+  cursor: pointer;
+}
+
+
+#markerActive {
+    background-color: #FF5361;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;    
+  }
+  
+  #markerInactive {
+    background-color: var(--black01);
+    background-size: cover;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+  }
+  
+  .mapboxgl-popup-close-button {
+    display: none;
+  }
+  
+  .mapboxgl-popup-content {
+    padding: 0;
+    width: 300px;
+  }
+  
+  .mapboxgl-popup-content h3 {
+    background: #91c949;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    /* font-weight: 700; */
+    margin-top: -15px;
+  }
+  
+  .mapboxgl-popup-content h4 {
+    margin: 0;
+    padding: 10px;
+    font-weight: 400;
+  }
+  
+  .mapboxgl-popup-content div {
+    padding: 10px;
+  }
+  
+  .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 15px;
+  }
+  
+  .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    border-bottom-color: #91c949;
+  } 
+  
+  .mapboxgl-popup {
+    padding-bottom: 50px;
+  }

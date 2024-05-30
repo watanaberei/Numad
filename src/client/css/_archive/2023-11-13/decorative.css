@@ -1,0 +1,12 @@
+/* RULES */
+.lineH {
+    background-color: var(--grey06);
+    height: 1px;
+    width: 100%;
+  }
+  
+  .lineV {
+    background-color: var(--grey06);
+    height: 100%;
+    width: 1px;
+  }

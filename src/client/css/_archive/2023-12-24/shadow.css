@@ -1,0 +1,12 @@
+:root {
+    --shadow01: 1.5px 1.5px 0.0px #10101145;
+    --shadow02: 3.0px 3.0px 0.0px #10101145;
+    
+    --shadowOutline01: 3.0px 3.0px 0.0px #10101145;
+    --shadowOutline02: 5.1px 5.1px 0.0px #10101145;
+    --shadowOutline03: 6.0px 6.0px 0.0px #10101145;
+
+    --display01: 10px 10px 53px 0px #10101145;
+
+    --textShadow03: 3px 3px 0.1px black;
+}

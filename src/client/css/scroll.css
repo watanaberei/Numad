@@ -1,0 +1,66 @@
+/* :root {
+    --space: 2rem;
+    --space-xs: calc(var(--space) / 3);
+    --space-sm: calc(var(--space) / 2);
+    --space-md: calc(var(--space) * 2);
+  
+    --color-primary: lightgray;
+    --color-accent: whitesmoke;
+    --color-dark: black;
+    --color-mid: gray;
+    --color-light: white;
+    --color-highlight: dodgerblue;
+  
+    --radius: 0.125rem;
+  } */
+  
+  /* Here are the base styles for the main layout and sticky component */
+  /* * {
+    box-sizing: border-box;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .article {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 40%;
+  }
+
+.sidebar {
+    --offset: var(--space);
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: start;
+    position: sticky;
+    top: var(--offset);
+  }
+  
+  .component {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  .component .content {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .sidebar .component {
+    max-height: calc(100vh - var(--offset) * 2);
+  }
+   */
+
+
+
+
+  .sticky {
+    /* background-color: red; */
+    position:-webkit-sticky;
+    position:sticky;
+    top: 0;
+  }
+  

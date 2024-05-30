@@ -1,0 +1,78 @@
+.overlay-full-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.75) ,rgba(0,0,0,0.6) ,rgba(0,0,0,0.45),rgba(0,0,0,0.3),rgba(0,0,0,0.15) ,rgba(0,0,0,0),rgba(0,0,0,0.15) ,rgba(0,0,0,0.3),rgba(0,0,0,0.45),rgba(0,0,0,0.6));
+    img {
+		z-index:-1;
+	}
+}
+.overlay-center-gradient {
+	background:radial-gradient(ellipse at center, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+	img {
+		z-index: -1;
+	}
+}
+.overlay-top-gradient {
+	  background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.35),rgba(0,0,0,0.65),rgba(0,0,0,0.95) 100%); /* W3C */
+	img {
+		z-index:-1;
+	}
+}
+.overlay-right-gradient {
+	  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.35),rgba(0,0,0,0.65),rgba(0,0,0,0.95) 100%); /* W3C */
+	img {
+		z-index:-1;
+	}
+}
+.overlay-bottom-gradient {
+	  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.35),rgba(0,0,0,0.65),rgba(0,0,0,0.95) 100%); /* W3C */
+	img {
+		z-index:-1;
+	}
+}
+.overlay-left-gradient {
+	  background: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.35),rgba(0,0,0,0.65),rgba(0,0,0,0.95) 100%); /* W3C */
+	img {
+		z-index:-1;
+	}
+}
+
+
+
+
+.overlay-full-text {
+	.overlay-img-text {
+        color: var(--white01);
+		padding-top:0;
+        text-shadow: var(---textShadow03);
+	}
+}
+
+.overlay-top-text {
+	.overlay-img-text {
+        color: var(--white01);
+		padding-top:0;
+        text-shadow: var(---textShadow03);
+	}
+}
+.overlay-right-text {
+	.overlay-img-text {
+        color: var(--white01);
+		padding-right:0;
+        text-shadow: var(---textShadow03);
+	}
+}
+.overlay-bottom-text {
+	.overlay-img-text {
+        color: var(--white01);
+		padding: 0;
+		top: 75%;
+		margin-left: 1.25rem;
+        text-shadow: var(---textShadow03);
+	}
+}
+.overlay.card-left-text {
+	.overlay-img-text {
+        color: var(--white01);
+		padding-left:0;
+        text-shadow: var(---textShadow03);
+	}	
+}

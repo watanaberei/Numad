@@ -1,0 +1,771 @@
+/* Branding */
+.icon-neumad-30 {
+  background: url('./../assets/icon/neumad/icon-neumad-30.svg') no-repeat;
+  height: 30px;
+  width: 30px;
+  display: block;
+  /* Other styles here */
+}
+
+.neustar-gold-active {
+  background: url('./../assets/_brand/neustar/neustar-gold-active.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neustar-gold-inactive {
+  background: url('./../assets/_brand/neustar/neustar-gold-inactive.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neubranch-gold-start {
+  background: url('./../assets/_brand/neustar/neubranch-gold-start.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neubranch-gold-end {
+  background: url('./../assets/_brand/neustar/neubranch-gold-end.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+
+.neustar-silver-active {
+  background: url('./../assets/_brand/neustar/neustar-silver-active.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neustar-silver-inactive {
+  background: url('./../assets/_brand/neustar/neustar-silver-inactive.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neubranch-silver-start {
+  background: url('./../assets/_brand/neustar/neubranch-silver-start.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neubranch-silver-end {
+  background: url('./../assets/_brand/neustar/neubranch-silver-end.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+
+.neustar-bronze-active {
+  background: url('./../assets/_brand/neustar/neustar-bronze-active.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neustar-bronze-inactive {
+  background: url('./../assets/_brand/neustar/neustar-bronze-inactive.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neubranch-bronze-start {
+  background: url('./../assets/_brand/neustar/neubranch-bronze-start.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neubranch-bronze-end {
+  background: url('./../assets/_brand/neustar/neubranch-bronze-end.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+
+
+
+.neustar-gold60 {
+  background: url('./../assets/_brand/neustar/neustar-gold-metal60.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neustar-silver60 {
+  background: url('./../assets/_brand/neustar/neustar-silver-metal60.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+.neustar-bronze60 {
+  background: url('./../assets/_brand/neustar/neustar-bronze-metal60.svg') no-repeat;
+  height: 60px;
+  width: 60px;
+  display: block;
+}
+
+
+.neustar-gold15 {
+  background: url('./../assets/_brand/neustar/neustar-gold-metal15.svg') no-repeat;
+  height: 15px;
+  width: 15px;
+  display: block;
+}
+.neustar-silver15 {
+  background: url('./../assets/_brand/neustar/neustar-silver-metal15.svg') no-repeat;
+  height: 15px;
+  width: 15px;
+  display: block;
+}
+.neustar-bronze15 {
+  background: url('./../assets/_brand/neustar/neustar-bronze-metal15.svg') no-repeat;
+  height: 15px;
+  width: 15px;
+  display: block;
+}
+.neubranch-gold15-start {
+  background: url('./../assets/_brand/neustar/neubranch-gold15-start.svg') no-repeat;
+  height: 15px;
+  width: 9px;
+  display: block;
+}
+.neubranch-gold15-end {
+  background: url('./../assets/_brand/neustar/neubranch-gold15-end.svg') no-repeat;
+  height: 15px;
+  width: 9px;
+  display: block;
+}
+.neubranch-silver15-start {
+  background: url('./../assets/_brand/neustar/neubranch-silver15-start.svg') no-repeat;
+  height: 15px;
+  width: 9px;
+  display: block;
+}
+.neubranch-silver15-end {
+  background: url('./../assets/_brand/neustar/neubranch-silver15-end.svg') no-repeat;
+  height: 15px;
+  width: 9px;
+  display: block;
+}
+.neubranch-bronze15-start {
+  background: url('./../assets/_brand/neustar/neubranch-bronze15-start.svg') no-repeat;
+  height: 15px;
+  width: 9px;
+  display: block;
+}
+.neubranch-bronze15-end {
+  background: url('./../assets/_brand/neustar/neubranch-bronze15-end.svg') no-repeat;
+  height: 15px;
+  width: 9px;
+  display: block;
+}
+
+
+
+
+
+.icon-search {
+  background: url('./../assets/icon/icon_search.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+.icon-close {
+  background: url('./../assets/icon/icon_close.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+.icon-plus {
+  background: url('./../assets/icon/icon_plus.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+.icon-hamburger {
+  background: url('./../assets/icon/icon_hamburger.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+.icon-Work {
+  background: url('./../assets/icon/icon_work.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+.icon-Unwind {
+  background: url('./../assets/icon/icon_unwind.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+.icon-Dine {
+  background: url('./../assets/icon/icon_dine.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+.icon-Shorts {
+  background: url('./../assets/icon/icon_shorts.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+/* Other styles here */
+}
+
+.icon-Places {
+  background: url('./../assets/icon/icon_places.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+.icon-Series {
+  background: url('./../assets/icon/icon_series.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  /* Other styles here */
+}
+
+
+.icon-Stars {
+  background: url('./../assets/icon/social/icon-social-rating.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-Reviews {
+  background: url('./../assets/icon/social/icon-social-rating.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-Map {
+  background: url('../assets/icon/icon_map.svg') no-repeat;
+  height: 21px;
+  width: 21px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-DropDown-21px {
+  background: url('../assets/icon/search/icon-dropDown-21px.svg') no-repeat;
+  height: 21px;
+  width: 21px;
+  display: block;
+  color: var(--white01);
+}
+
+
+
+
+
+
+/* NEUSTAR */
+.icon-neustar-active12 {
+background: url('../assets/icon/rating/icon-neustar-active.svg') no-repeat;
+height: 12px;
+width: 12px;
+display: block;
+}
+
+.icon-neustar-inactive12 {
+background: url('../assets/icon/rating/icon-neustar-inactive.svg') no-repeat;
+height: 12px;
+width: 12px;
+display: block;
+}
+
+
+.icon-neustar-container {
+display: flex;
+flex-direction: row;
+gap: 3px;
+}
+
+/* .icon-Neustar-0of4 {
+  background: url('../assets/icon/neustar/icon_Neustar-0of4.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-Neustar-1of4 {
+  background: url('../assets/icon/neustar/icon_Neustar-0of4.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-Neustar-2of4 {
+  background: url('../assets/icon/neustar/icon_Neustar-0of4.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-Neustar-3of4 {
+  background: url('../assets/icon/neustar/icon_Neustar-0of4.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-Neustar-4of4 {
+  background: url('../assets/icon/neustar/icon_Neustar-0of4.svg') no-repeat;
+  height: 12px;
+  width: 12px;
+  display: block;
+  color: var(--white01);
+} */
+/* NEUSTAR */
+
+
+
+
+
+
+
+
+/* INDICATOR */
+.icon-indicator-active {
+  background: url('../assets/icon/indicator/icon-indicator-active.svg') no-repeat;
+  height: 21px;
+  width: 21px;
+  display: block;
+  color: var(--ink03);
+  }
+
+  /* INDICATOR */
+.icon-indicator-inactive {
+  background: url('../assets/icon/indicator/icon-indicator-inactive.svg') no-repeat;
+  height: 21px;
+  width: 21px;
+  display: block;
+  color: var(--ink03);
+  }
+
+
+
+
+
+
+
+
+/* SUMMARY */
+.icon-Foundations-21 {
+background: url('../assets/icon/summary/icon-foundations-21.svg') no-repeat;
+height: 21px;
+width: 21px;
+display: block;
+color: var(--ink03);
+}
+
+.icon-Services-21 {
+background: url('../assets/icon/summary/icon-services-21.svg') no-repeat;
+height: 21px;
+width: 21px;
+display: block;
+color: var(--ink03);
+}
+
+.icon-Experience-21 {
+background: url('../assets/icon/summary/icon-experience-21.svg') no-repeat;
+height: 21px;
+width: 21px;
+display: block;
+color: var(--ink03);
+}
+
+
+
+
+
+
+
+
+
+/* WEATHER */
+.icon-weather-default {
+  background: url('./../assets/icon/weather/icon-weather-default.svg') no-repeat;
+  height: 15px;
+  width: 15px;
+  display: block;
+  color: var(--white01);
+}
+
+
+
+
+
+
+
+
+
+/* ATTRIBTUES */
+.icon-attributes-cleanliness {
+  background: url('../assets/icon/attributes/icon-attributes-cleanliness.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+.icon-attributes-location {
+  background: url('../assets/icon/attributes/icon-attributes-location.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+.icon-attributes-noise {
+  background: url('../assets/icon/attributes/icon-attributes-noise.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+.icon-attributes-outlet {
+  background: url('../assets/icon/attributes/icon-attributes-outlets.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+.icon-attributes-parking {
+  background: url('../assets/icon/attributes/icon-attributes-parking.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+.icon-attributes-pricing {
+  background: url('../assets/icon/attributes/icon-attributes-price.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+.icon-attributes-space {
+  background: url('../assets/icon/attributes/icon-attributes-space.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+.icon-attributes-wifi {
+background: url('../assets/icon/attributes/icon-attributes-wifi.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+
+.icon-attributes-hours {
+background: url('../assets/icon/attributes/icon-attributes-hours.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+
+.icon-attributes-temperature {
+background: url('../assets/icon/attributes/icon-attributes-temperature.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+/* ATTRIBUTES */
+
+
+
+/* SERVICE */
+.icon-service-coffee-21 {
+background: url('../assets/icon/service/icon-service-coffee-21.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+.icon-service-hotBeverage-21 {
+background: url('../assets/icon/service/icon-service-hotBeverage-21.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+.icon-service-tea-21 {
+background: url('../assets/icon/service/icon-service-tea-21.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+.icon-service-beverage-21 {
+background: url('../assets/icon/service/icon-service-beverage-21.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+.icon-service-seasonal-21, .icon-service-limitedTime-21 {
+background: url('../assets/icon/service/icon-service-seasonal-21.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+.icon-service-pastry-21 {
+background: url('../assets/icon/service/icon-service-pastry-21.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+.icon-service-lunch-21 {     
+background: url('../assets/icon/service/icon-service-lunch-21.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+.icon-service-breakfast-21 {
+background: url('../assets/icon/service/icon-service-breakfast-21.svg') no-repeat;
+height: 18px;
+width: 18px;
+display: block;
+color: var(--white01);
+}
+
+
+
+
+
+
+
+
+
+
+/* CUSTOM MAP MARKER */
+.icon-mapMarker {
+  border: none;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/_brand/symbol/map/neumad-mapMarker-favicon-green.svg);
+}
+
+.icon-mapMarker-userLocation {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/_brand/symbol/map/neumad-mapMarker-favicon-green.svg);
+}
+
+.icon-mapMarker-Dine {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/icon/map/markers/icon-mapMarker-dine.svg);
+}
+
+.icon-mapMarker-Place {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/icon/map/markers/icon-mapMarker-places.svg);
+}
+
+.icon-mapMarker-Review {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/icon/map/markers/icon-mapMarker-reviews.svg);
+}
+
+.icon-mapMarker-Unwind {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/icon/map/markers/icon-mapMarker-unwind.svg);
+}
+
+.icon-mapMarker-Work {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/icon/map/markers/icon-mapMarker-work.svg);
+}
+
+  
+.icon-mapMarker-Rest {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/icon/map/markers/icon-mapMarker-rest.svg);
+}
+
+  
+.icon-mapMarker-Point {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/icon/map/markers/icon-mapMarker-point.svg);
+}
+
+
+
+/* CUSTOM MAP MARKER */
+
+
+
+
+
+
+
+/* CUSTOM SEARCH */
+.icon-Search-21px {
+  background: url('../assets/icon/search/icon-search-21px.svg') no-repeat;
+  height: 21px;
+  width: 21px;
+  display: block;
+  color: var(--white01);
+}
+  /* CUSTOM SEARCH */
+
+
+
+
+
+
+/* SOCIAL */
+.icon-social-rating {
+  background: url('../assets/icon/social/icon-social-rating.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-social-share {
+  background: url('../assets/icon/social/icon-social-share.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+.icon-social-thumbsUp {
+  background: url('../assets/icon/social/icon-social-thumbsUp.svg') no-repeat;
+  height: 18px;
+  width: 18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+
+
+
+/* GLYPH */
+.icon-glyph-dotvider {
+  background: url('../assets/icon/glyph/icon_glyph_dotvider.svg') no-repeat;
+  height:18px;
+  width:18px;
+  display: block;
+  color: var(--white01);
+}
+
+
+
+
+
+
+
+
+
+  /* CATEGORY */
+
+  .icon-category-Work20px {
+      background: url('../assets/icon/category/icon-category-Work20px.svg') no-repeat;
+      height: 20px;
+      width: 20px;
+      display: block;
+  }
+
+
+  
+  /* CATEGORY */

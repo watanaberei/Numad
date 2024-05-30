@@ -1,0 +1,136 @@
+
+.blog-layout {
+    display: grid;
+    /* grid-template-columns: 1fr, 1.1fr, 1.2fr, 1.3fr; */
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: var(--s03);
+    align-items: flex-start;
+  }
+  
+  .blog {
+    background-color: var(--white01);
+    transition: all 300ms ease-out;
+    display: grid;
+    gap: var(--s03);
+    align-items: flex-start;
+    display: grid;
+  }
+
+  .section-header {
+    padding-bottom: var(--s03);
+  }
+  
+  .blog:hover {
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .blog .blog-img {
+    /* margin: 1.5rem 1.5rem 0; */
+    /* height: 15rem; */
+    /* height: 9rem; */
+  }
+  
+  .blog .blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .blog .blog-text {
+    /* padding: 1.5rem; */
+    /* font-size: var(--text01_D); */
+    display: grid;
+    gap: var(--s03);
+    align-items: flex-start;
+  }
+
+  .blog-section-text {
+    /* font-size: var(--text01_D); */
+    text-transform: uppercase;
+    color: var(--grey01);
+  }
+  
+  .blog .blog-text .blog-header {
+    margin-bottom: var(--s03);
+    color: var(--black01);
+    display: flex;
+    flex-direction: row;
+    /* font-size: var(--text03_D);
+    font-weight: 500; */
+    /* height: 60px; */
+  }
+
+  .blog-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--s03);
+  }
+
+  .blog-title-text {
+    /* margin-bottom: var(--s03); */
+    color: var(--black01);
+    /* font-size: var(--text03_D); */
+    font-weight: 900;
+    text-transform: capitalize;
+    /* height: 60px; */
+  }
+
+  .blog-overview-text {
+    color: var(--black01);
+    /* font-size: var(--text02_D); */
+    font-weight: 500;
+  }
+  
+  .blog .date {
+    /* font-size: var(--text01_D); */
+    color: var(--grey01);
+  }
+
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .blog .author {
+    margin-top: 1rem;
+  }
+  
+  .blog .author-image {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+  }
+  
+  .blog .author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .blog .author {
+    /* font-size: var(--text01_D); */
+  }
+  
+  @media (max-width: 567px) {
+    .blog .blog-text .blog-title {
+      height: 50px;
+      /* font-size: var(--text01_M); */
+    }
+  
+    .ad {
+      margin: 1rem auto;
+      height: 10rem;
+    }
+  
+    .ad a img {
+      object-fit: contain;
+    }
+  
+    .blog .blog-img {
+    height: 18rem;
+    }
+  }
+  

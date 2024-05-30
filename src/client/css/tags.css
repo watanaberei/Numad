@@ -1,0 +1,138 @@
+/*****************************/
+/*********** TAGS ***********/
+/*****************************/
+.tags .container-right,
+.tags .container-right * {
+  box-sizing: border-box;
+}
+.tags .container-right {
+  /* border-radius: 3px;
+  border-style: solid;
+  border-color: transparent; */
+  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  position: relative;
+}
+.tags .container-left {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+
+
+
+
+
+
+.neumad-item,
+.neumad-item * {
+  box-sizing: border-box;
+}
+.neumad-item {
+  padding: 2.05px 0px 0.95px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.detail-tag-label-neumad-02 {
+  background: var(--stroke-grey, #ebebeb);
+  border-radius: 6px;
+  border-style: solid;
+  border-color: var(--inkw04, #d3d8dc);
+  border-width: 1px;
+  padding: 1.5px 4.5px 1.5px 4.5px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.score {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.stars {
+  color: #373a42;
+  text-align: left;
+  font-family: "HelveticaNeue-Bold", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  position: relative;
+}
+.neustar {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.neustar-gold {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+.neumad-brand-logomark {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.neustar-gold-mid {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+.neustar-gold2 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: -1.35px;
+  top: 1.76px;
+  transform-origin: 0 0;
+  transform: rotate(-15deg) scale(1, 1);
+}
+.neumad-brand-logomark2 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.neumad-brand-logomark3 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}

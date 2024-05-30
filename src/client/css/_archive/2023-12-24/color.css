@@ -1,0 +1,105 @@
+:root {
+    /* PRIMARY */
+    --primary01: #052213;
+    --primary02: #6FCF97;
+    --primary03: #49af74;
+  
+    /* INK */
+    --ink01: #165937;
+    --ink02: #6FCF97;
+    --ink03: #052213;
+  
+    /* SECONDART */
+    --secondary01: #6eaade;
+    --secondary02: #4db2ec;
+    --secondary03: #4db2ec;
+  
+    /* TERTIARY */
+    --tertiary01: #f1ab96;
+    --tertiary02: #e95572;
+    --tertiary03: #e95572;
+  
+    /* ACCENT */
+    --accent01: #d0c573;
+    --accent02: #e9c638;
+    --accent03: #e9c638;
+  
+    /* GREEN */
+    --green01: #6FB866;
+    --green02: #165937;
+    --green03: #0b3520;
+  
+    /* BLUE */
+    --blue01: #AAE2F4;
+    --blue02: #45AFE2;
+    --blue03: #3E93D6;
+  
+    --yellow01: #FED259;
+    --yellow02: #FED259;
+    --yellow03: #FED259;
+  
+    --orange01: #FFDBB0;
+    --orange02: #FFBF44;
+    --orange03: #FFBF44;
+  
+    --purple01: #DFD7FF;
+    --purple02: #E3A9FF;
+    --purple03: #E3A9FF;
+  
+    --red01: #F97C58;
+    --red02: #EC4010;
+    --red03: #EC4010;
+  
+  
+    --texture: url('../assets/style/background/solid/neumad_background_solid-pattern.png') repeat;
+  
+  
+  
+    --work01: #43F53F;
+    --work02: #295528;
+    --work03: #0A2D09;
+  
+    --dine01: #AAE2F4;
+    --dine02: #45AFE2;
+    --dine03: #3E93D6;
+  
+    --unwind01: #FED259;
+    --unwind02: #FED259;
+    --unwind03: #FED259;
+  
+    --stores01: #FF5361;
+    --stores02: #FF5361;
+    --stores03: #FF5361;
+  
+    --series01: #F97C58;
+    --series02: #EC4010;
+    --series03: #EC4010;
+  
+    --map01: #F97C58;
+    --map02: #EC4010;
+    --map03: #EC4010;
+    
+    --dine01: #FCE57E;
+    --dine02: #FCE57E;
+    --dine03: #FCE57E;
+  
+  
+  
+  
+    --white01: #FDFDFD;
+    --white02: #FDFDFD;
+    --white03: #E9E9E9;
+    --black01: #202521;
+    --black02: #192721;
+    --grey01: #F2F4EB;
+    --grey02: #E2E6E0;
+    --grey03: #D7DCD7;
+    --grey04: #41414388;
+    --grey05: #4141438b;
+    --grey06: #41414324;
+    --orange: #ffa238;
+
+
+}
+
+

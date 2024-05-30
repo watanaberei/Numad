@@ -1,0 +1,48 @@
+.green {
+    background-color: green;
+    opacity: 0.3;
+}
+
+.red {
+    background-color: pink;
+    opacity: 0.3;
+}
+
+.cyan {
+    background-color: cyan;
+    opacity: 0.3;
+}
+
+.orange {
+    background-color: cyan;
+    opacity: 0.3;
+}
+
+.black {
+    background-color: black;
+    opacity: 0.3;
+}
+
+.grey {
+    background-color: #D9D9D930;
+    outline-color: #D9D9D930;
+    outline-width: 1px;
+}
+
+.white {
+    background-color: #ffffff30;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+.column {
+    width: 100%;
+    min-height:100px;
+    height: 100%;
+}

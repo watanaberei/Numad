@@ -1,0 +1,52 @@
+.nav-topbar-logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 308px;
+    position: relative;
+}
+
+.nav-topbar-logo-container span {
+    color: var(--ink-black-03, #272727);
+    text-align: left;
+    font-family: var(--text02-b-font-family, "HelveticaNeue-Bold", sans-serif);
+    font-size: var(--text02-b-font-size, 12px);
+    line-height: var(--text02-b-line-height, 18px);
+    font-weight: var(--text02-b-font-weight, 700);
+    position: relative;
+    padding-top: 3px;
+}
+
+
+i.brand-logo-18px {
+    background: url('./../assets/_brand/logo/theNeumad-logo-18px.svg') no-repeat;
+    height: 18px;
+    width: 91px;
+   
+    display: block;
+}
+
+i.brand-logomark-18px {
+    background: url('./../assets/_brand/logomark/theNeumad-logomark-18px.svg') no-repeat;
+    height: 18px;
+    width: 91px;
+    display: block;
+}
+i.brand-logo-18px {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 308px;
+    position: relative;
+}
+i.brand-logomark-18px {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    overflow: visible;
+}

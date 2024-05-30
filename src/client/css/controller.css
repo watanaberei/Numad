@@ -1,0 +1,177 @@
+.controller,
+.controller * {
+  box-sizing: border-box;
+}
+.controller {
+  padding: 3px 0px 3px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: 2px 17px 18px 0px rgba(196, 196, 196, 0.35);
+}
+.controller > .item {
+  background: var(--bg02, #f3f4f9);
+  border-radius: 12px;
+  border-style: solid;
+  border-color: var(--grey05, #d8e1e3);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 141px;
+  height: 142px;
+  position: relative;
+  box-shadow: var(
+    --l-shadow-39-box-shadow,
+    0.01px 1.06px 1.12px 0px rgba(163, 163, 163, 0.35)
+  );
+  overflow: hidden;
+}
+.controller > .item > .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 123px;
+  position: relative;
+}
+.controller > .item > content > .header {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  align-self: stretch !important;
+  flex-shrink: 0 !important;;
+  position: relative !important;;
+}
+.controller > .item > content > .header > .primary {
+  display: flex;
+  flex-direction: row;
+  gap: 4.5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.controller > .item > content > .header > .primary i {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  position: relative;
+}
+.controller > .item > content > .header > .secondary {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+}
+.controller > .item > content > .header > .secondary span {
+  flex-shrink: 0;
+  width: 27px;
+  height: 9px;
+  position: static;
+}
+._0-3-m {
+  color: var(--inkb, #101011);
+  text-align: right;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: 28.5px;
+  top: 0px;
+}
+.controller > .item > content > .image {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 88px;
+  height: 27px;
+  max-width: 216px;
+  position: relative;
+}
+.image-657 {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  flex: 1;
+  max-width: 213px;
+  max-height: 60px;
+  position: relative;
+}
+.controller > .item > content > .label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 6px;
+  position: relative;
+}
+.controller > .item > content > .label .span {
+  flex-shrink: 0;
+  width: 111px;
+  height: 6px;
+  position: static;
+}
+.sprouts-farmers-market {
+  color: var(--neumad02-grey03, #65676d);
+  text-align: center;
+  font-family: "HelveticaNeue-Bold", sans-serif;
+  font-size: 9px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 111px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.controller > .item.outer {
+  background: var(--bg02, #f3f4f9);
+  border-radius: 12px;
+  border-style: solid;
+  border-color: var(--grey05, #d8e1e3);
+  border-width: 1px;
+  opacity: 0.30000001192092896;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 141px;
+  height: 142px;
+  position: relative;
+  box-shadow: var(
+    --l-shadow-39-box-shadow,
+    0.01px 1.06px 1.12px 0px rgba(163, 163, 163, 0.35)
+  );
+  overflow: hidden;
+}

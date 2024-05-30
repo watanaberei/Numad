@@ -1,0 +1,10 @@
+.article-container .content img.article_authorImg {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }

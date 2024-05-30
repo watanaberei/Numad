@@ -1,0 +1,533 @@
+:root {
+	--colWidth: 2.74vw;
+  --rowHeight: 2.74vw;
+	--clusterWidth: calc((var(--colWidth) * 3) + (var(--g) * 2));
+  --stackHeight: calc((var(--rowHeight) * 3) + (var(--g) * 2));
+	--mainWidth: calc((var(--clusterWidth) * 6) + (var(--paddingWidth) * 2) + (var(--d) * 7));
+	--mainFullBleedWidth: calc((var(--clusterWidth) * 6) + (var(--paddingWidth) * 2) + (var(--d) * 7) + var(--oWidth));
+	--secondaryWidth: calc((var(--clusterWidth) * 2) + (var(--paddingWidth) * 2) + (var(--d) * 3));
+	--outerWidth: var(--colWidth);
+	--paddingWidth: var(--colWidth);
+	--g: 1.14vw;
+	--d: 0.47vw;
+
+	--cluster1All: 'col1 col2 col3';
+	--cluster2All: 'col4 col5 col6';
+	--cluster3All: 'col7 col8 col9';
+	--cluster4All: 'col10 col11 col12';
+	--cluster5All: 'col13 col14 col15';
+	--cluster6All: 'col16 col17 col18';
+	--cluster7All: 'col19 col20 col21';
+	--cluster8All: 'col22 col23 col24';
+	
+	--grid: 'outer1 main secondary outer2';
+	--platinum:  'outer1 main secondary outer2';
+	--map: 'outer1 main secondary outer2';
+	--main: 'padding1 cluster1 cluster2 cluster3 cluster4 cluster5 cluster6 padding2';
+	--secondary: 'padding3 cluster7 cluster8 padding4';
+	--cluster: 'column1 column2 column3';
+	
+	
+  /*   COLOR */
+	--testC: rgba(255,0,255,0.0);
+	--testP: #FF536130;
+	--testF: rgba(255,200,0,0.0);
+	--testCol: #00FFF030;
+	--testO: #D6301C75;
+  --testR: background-color: rgba(255,255,255,0.0);
+  --testStk: background-color: rgba(255,255,255,0.0);	background-color: rgba(255,255,255,0.3);
+  /*   COLOR */
+	
+  /* OUTLINE */
+	--testOutlineWidth: 0.3;
+	--testOutlineColor: #00FFF030;
+	--testOutlineStyle: solid;
+  --testRowWidth: 0.0;
+  --testOutlineColor: rgba(255,255,255,0.3)
+  /*   OUTLINE */
+	
+  /*   GRID VISUALIZATION */
+	--gridVisibility: hidden; 
+  /* GRID VISUALIZATION */
+  }
+  
+   
+  
+/* GLOBAL */
+body {
+	top: 0;
+	left: 0;
+	margin: 0 !important;
+	width: 100%;
+	overflow-x: hidden;
+  }
+  
+  .full {
+	background-color: var(--testF);
+	height: 100%;
+  }
+  .half  {
+	background-color: var(--testF);
+	width: 50%;
+  }
+  .center .c {
+	  -webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-box-flex: 1;
+	box-flex: 1;
+  }
+  .fixed-width {
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	-ms-box-flex: 0;
+	box-flex: 0;
+	width: 500px;
+	background-color: rgba(255,0,0,0.1) !important;
+  }
+  /* GLOBAL */
+  
+  
+  
+  
+  
+  /* ROW */
+  .r {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,255,255,0.3);
+  }
+  /* ROW */
+  
+
+
+
+
+
+
+  
+  
+  /* GRID */
+  .grid {
+	left:0;
+	top:0;
+	padding:0;
+	display: grid;
+	grid-gap: 0;
+  grid-template-rows:
+  [row-start] 100% [row-end] ;
+	grid-template-columns:   
+/* 	  [o1-start] var(--outerWidth) [o1-end]
+	  var(--g) */
+	  [main-start] var(--mainWidth) [main-end] 
+	  var(--d)
+	  [secondary-start] var(--secondaryWidth) [secondary-end]
+/* 	  var(--g)
+	  [o2-start] var(--outerWidth) [o2-end]; */
+  }
+  
+  
+  .gridVisualization {
+	position: absolute;
+	z-index: -3;
+	height: 100vh;
+	width: 100vw;
+	display: visible;
+  }
+  
+  /* OUTER */
+  /* .o1 {grid-column: o1-start / o1-end; background-color: var(--testO);}
+  .o2 {grid-column: o2-start / o2-end; background-color: var(--testO);} */
+  /* OUTER */
+  
+  
+
+.grid.base {
+	grid-template-columns:  
+		/* [o1-start]var(--outerWidth) var(--g)  */
+		[start-start p1-start] var(--paddingWidth) var(--d)
+		[p1-end] var(--d) [c1-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) 
+		[c1-end] var(--d) [c2-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) 
+		[c2-end] var(--d) [c3-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) 
+		[c3-end] var(--d) [c4-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) 
+		[c4-end] var(--d) [c5-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) 
+		[c5-end] var(--d) [c6-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) 
+		[c6-end] var(--d) [p2-start] var(--paddingWidth)   
+		[c2-end] var(--d) [c3-stzrt] var(--paddingWidth)  
+		[p3-end] var(--d) [c7-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) 
+		[c7-end] var(--d) [c8-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) 
+		[c8-end] var(--d) [p4-start] var(--paddingWidth) 
+		[p4-end end-end] 
+		/* var(--g) var(--outerWidth) [o2-end]; */
+} 
+
+.grid.base > .fullBleed {grid-column: start-start / end-end; background-color: var(--testF);}
+.grid.base > .full {grid-column: c1-start / c8-end; background-color: var(--testF);}
+
+.grid > .left {
+	align-self: center;
+	/* width: fit-content; */
+	/* grid-column: p1-start / c2-end; */
+	background-color: var(--testF);	
+	justify-content: start;
+
+}
+
+.grid >.center {
+    align-self: center;
+    display: grid;
+	/* width: fit-content; */
+    grid-column: c3-start / c6-end;
+	background-color: var(--testF);
+	/* justify-content: center; */
+
+}
+
+.grid >.right {
+	align-self: center;
+    display: grid;
+    /* width: fit-content; */
+    grid-column: c8-start / p4-end;
+    background-color: var(--testF);
+    justify-content: end;
+
+}
+
+
+/* PLATINUM */
+.grid.platinum {
+	grid-template-columns:   
+		/* [o1-start] var(--outerWidth) [o1-end] */
+		/* var(--g) */
+		[main-start] var(--mainWidth) [main-end] 
+		var(--d)
+		[secondary-start] var(--secondaryWidth) [secondary-end]
+		/* var(--g) */
+		/* [o2-start] var(--outerWidth) [o2-end]; */
+	}
+
+
+
+
+  /* ROW */
+  .r {
+    top: 0;
+    display: grid;
+    grid-row: row-start / row-end;
+    grid-template-rows:  r-start / r-end;
+	  background-color: var(--testR);
+    outline-style: fill;
+    outline-width: var(--outlineRowWidth);
+    outline-color: var(--outlineRowColor);
+  }
+  .stk {
+  display: grid;
+  grid-row: stack-start / stack-end;
+	background-color: var(--testStk);
+  outline-style: fill;
+  outline-width: var(--outlineRowWidth);
+  outline-color: var(--outlineRowColor);
+  grid-template-rows: var(--g) [row-start] var(--rowHeight) [row-end] var(--g);
+  }
+  /* ROW */
+
+
+
+
+  
+  
+  /* MAIN */
+  /* .grid > .m, .grid > div .m, .grid .m > div, .grid > a .m, .grid .m > a   { */
+.grid > .m, .grid > div .m, .grid .m > div, .grid > a .m, .grid .m > a   {
+	display: grid;
+	margin: 0; 
+	padding: 0;
+	grid-gap: 0;
+	grid-column: main-start / main-end;
+	grid-template-columns: 
+	  [main-start p1-start] var(--colWidth) [p1-end] 
+	  var(--d) 
+	  [content-start c1-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) [c1-end] 
+	  var(--d) 
+	  [c2-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) [c2-end] 
+	  var(--d) 
+	  [c3-start] var(--colWidth) var(--g) [c3col2] var(--colWidth) var(--g) [c3col3] var(--colWidth) [c3-end] 
+	  var(--d) 
+	  [c4-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) [c4-end] 
+	  var(--d) 
+	  [c5-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) [c5-end] 
+	  var(--d) 
+	  [c6-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) [c6-end content-end] 
+	  var(--d) 
+	  [p2-start] var(--colWidth) [p2-end main-end];
+  }
+  /* > div .s, .grid .s > div, .grid > a .s, .grid .s > a  */
+  .grid > .fullBleed {grid-column: start-start / end-end; background-color: red;}
+  .grid > .m > .fullBleed {margin-left: calc((var(--colWidth) + var(--g)) * -1); grid-column: p1-start / main-end; background-color: green;}
+  /* .grid > .s > .fullBleed {margin-right: calc((var(--colWidth) + var(--g)) * -1); grid-column: p3-start / secondary-end; background-color: blue;} */
+  .grid > .s > .fullBleed, .grid > .s > * > .fullBleed, .grid > * > .s > * > .fullBleed {margin-right: calc((var(--colWidth) + var(--g)) * -1); grid-column: p3-start / o2-end; background-color: blue;}
+  .grid > .full {grid-column: main-start / secondary-end; background-color: var(--testF);}
+  .grid > .m > .full {grid-column: main-start / main-end; background-color: var(--testF);}
+  .grid > .s > .full {grid-column: p3-start / p4-end; background-color: var(--testF);}
+
+  
+  
+  /* MAIN */
+.grid > .m .p1 {grid-column: p1-start / p1-end; background-color: var(--testP);}
+.grid > .m .p1-c2 {grid-column: main-start / c2-end; background-color: var(--cTest);}
+.grid > .m .p1-c3 {grid-column: main-start / c3-end; background-color: var(--cTest);}
+.grid > .m .p1-c4 {grid-column: main-start / c4-end; background-color: var(--cTest);}
+.grid > .m .p1-c5 {grid-column: main-start / c5-end; background-color: var(--cTest);}
+.grid > .m .p1-c6 {grid-column: main-start / c6-end; background-color: var(--cTest);}
+.grid > .m .p2 {grid-column: p2-start / p2-end; background-color: var(--testP);}
+
+.grid > .m .p1-c1col1 {grid-column: p1-start / span 3; background-color: var(--testC);}
+.grid > .m .p1-c1col2 {grid-column: p1-start / span 5; background-color: var(--testC);}
+.grid > .m .p1-c2col1 {grid-column: p1-start / span 9; background-color: var(--testC);}
+.grid > .m .p1-c2col2 {grid-column: p1-start / span 11; background-color: var(--testC);}
+.grid > .m .p1-c3col1 {grid-column: p1-start / span 15; background-color: var(--testC);}
+.grid > .m .p1-c3col2 {grid-column: p1-start / span 17; background-color: var(--testC);}
+.grid > .m .p1-c4col1 {grid-column: p1-start / span 21; background-color: var(--testC);}
+.grid > .m .p1-c4col2 {grid-column: p1-start / span 23; background-color: var(--testC);}
+.grid > .m .p1-c5col1 {grid-column: p1-start / span 27; background-color: var(--testC);}
+.grid > .m .p1-c5col2 {grid-column: p1-start / span 29; background-color: var(--testC);}
+.grid > .m .p1-c6col1 {grid-column: p1-start / span 33; background-color: var(--testC);}
+.grid > .m .p1-c6col2 {grid-column: p1-start / span 35; background-color: var(--testC);}
+
+.grid > .m .c1 {grid-column: c1-start / c1-end; background-color: var(--testC);}
+.grid > .m .c1col2-c7col1,.grid > .m > * > .c1col2-c7col1, .grid > * > .m > * > .c1col2-c7col1 {grid-column: 12 / 33; background-color: var(--testC);}
+.grid > .m .c1-c2 {grid-column: c1-start / c2-end; background-color: var(--testC);}
+.grid > .m .c1-c3 {grid-column: c1-start / c3-end; background-color: var(--testC);}
+.grid > .m .c1-c4 {grid-column: c1-start / c4-end; background-color: var(--testC);}
+.grid > .m .c1-c5 {grid-column: c1-start / c5-end; background-color: var(--testC);}
+.grid > .m .c1-c6 {grid-column: c1-start / c6-end; background-color: var(--testC);}
+.grid > .m .c1-p2 {grid-column: c1-start / p2-end; background-color: var(--testC);}
+
+.grid > .m .c2 {grid-column: c2-start / c2-end; background-color: var(--testC);}
+.grid > .m .c2-c3 {grid-column: c2-start / c3-end; background-color: var(--testC);}
+.grid > .m .c2-c4 {grid-column: c2-start / c4-end; background-color: var(--testC);}
+.grid > .m .c2-c5 {grid-column: c2-start / c5-end; background-color: var(--testC);}
+.grid > .m .c2-c6 {grid-column: c2-start / c6-end; background-color: var(--testC);}
+.grid > .m .c2-p2 {grid-column: c2-start / p2-end; background-color: var(--testC);}
+.grid > .m .c1col2-p2,.grid > .m > * > .c1col2-p2, .grid > * > .m > * > .c1col2-p2 {grid-column: 12 / c6-end; background-color: var(--testC);}
+
+.grid > .m .c3 {grid-column: c3-start / c3-end; background-color: var(--testC);}
+.grid > .m .c3-c5 {grid-column: c3-start / c5-end; background-color: var(--cTest);}
+.grid > .m .c3-c4 {grid-column: c3-start / c4-end; background-color: var(--testC);}
+.grid > .m .c3-c6 {grid-column: c3-start / c6-end; background-color: var(--testC);}
+.grid > .m .c3-p2 {grid-column: c3-start / p2-end; background-color: var(--testC);}
+
+.grid > .m .c4 {grid-column: c4-start / c4-end; background-color: var(--testC);}
+.grid > .m .c4-c5 {grid-column: c4-start / c5-end; background-color: var(--testC);}
+.grid > .m .c4-c6 {grid-column: c4-start / c6-end; background-color: var(--testC);}
+.grid > .m .c4-p2 {grid-column: c4-start / p2-end; background-color: var(--testC);}
+.grid > .m .c3col2-c5col2 {grid-column: 22 / 38; background-color: var(--testC);}
+.grid > .m .c4-c5col2 {grid-column: c4-start / span 18; background-color: var(--testC);}
+
+.grid > .m .c5 {grid-column: c5-start / c5-end; background-color: var(--testC);}
+.grid > .m .c5-c6 {grid-column: c5-start / c6-end; background-color: var(--testC);}
+.grid > .m .c5-p2 {grid-column: c5-start / p2-end; background-color: var(--testC);}
+
+.grid > .m .c6 {grid-column: c6-start / c6-end; background-color: var(--testC);}
+.grid > .m .c6-p2 {grid-column: c6-start / p2-end; background-color: var(--testC);}
+
+.grid > .m .p2 {grid-column: p2-start / p2-end; background-color: var(--testP);}
+/* MAIN */
+  
+  
+  
+  
+  
+  /* SECONDARY */
+  .grid > .s, .grid > div .s, .grid .s > div, .grid > a .s, .grid .s > a {
+	display: grid;
+	margin: 0; 
+	margin-right:var(--g);
+	/* grid-gap: 0; */
+	grid-column: secondary-start / secondary-end;
+	grid-template-columns: 
+	  [p3-start] var(--colWidth) [p3-end] 
+	  var(--d) 
+	  [c7-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) [c7-end] 
+	  var(--d) 
+	  [c8-start] var(--colWidth) var(--g) var(--colWidth) var(--g) var(--colWidth) [c8-end] 
+	  var(--d) 
+	  [p4-start] var(--colWidth) [p4-end];
+  } 
+  /* .grid > .s > .full {grid-column: secondary-start / secondary-end; background-color: var(--testF);} */
+  
+  .grid > .s .p1 {grid-column: p3-start / p3-end; background-color: var(--testP);}
+  .grid > .s .p1-c1 {grid-column: p3-start / c7-end; background-color: var(--testC);}
+  .grid > .s .p1-c2 {grid-column: p3-start / c8-end; background-color: var(--testC);}
+  
+  .grid > .s .c1 {grid-column: c7-start / c7-end; background-color: var(--testC);}
+  .grid > .s .c1-c2 {grid-column: c7-start / c8-end; background-color: var(--testC);}
+  .grid > .s .c1-p2 {grid-column: c7-start / p4-end; background-color: var(--testC);}
+  
+  .grid > .s .c2 {grid-column: c8-start / c8-end; background-color: var(--testC);}
+  .grid > .s .c2-p2 {grid-column: c8-start / p4-end; background-color: var(--testC);}
+  
+  .grid > .s .p2 {grid-column: p4-start / p4-end; background-color: var(--testP);}
+  
+  
+  
+  
+  
+  /* COLUMN */
+  .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8 {
+	display: grid;
+	margin: 0; 
+	padding: 0;
+	/* grid-gap: 0; */
+	grid-template-columns: 
+	  [col1-start] var(--colWidth) [col1-end]
+	  var(--g)
+	  [col2-start] var(--colWidth) [col2-end]
+	  var(--g)
+	  [col3-start] var(--colWidth) [col3-end];
+	background-color: var(--testC);
+  }
+  .col1 {
+	display: grid;
+	width: var(--colWidth);
+	grid-column: col1-start / col1-end;
+	background-color: var(--testCol);
+  }
+  .grid > .m > .c1 > .col1 {grid-column: c1col1-start / c1col1-end;}
+  .grid > .m > .c1 > .col2 {grid-column: c1col2-start / c1col2-end;}
+  .grid > .m > .c1 > .col3 {grid-column: c1col3-start / c1col3-end;}
+  
+  .grid > .m > .c2 > .col1 {grid-column: c2col1-start / c2col1-end;}
+  .grid > .m > .c2 > .col2 {grid-column: c2col2-start / c2col2-end;}
+  .grid > .m > .c2 > .col3 {grid-column: c2col3-start / c2col3-end;}
+  
+  .grid > .m > .c3 > .col1 {grid-column: c3col1-start / c3col1-end;}
+  .grid > .m > .c3 > .col2 {grid-column: c3col2-start / c3col2-end;}
+  .grid > .m > .c3 > .col3 {grid-column: c3col3-start / c3col3-end;}
+  
+  .grid > .m > .c4 > .col1 {grid-column: c4col1-start / c4col1-end;}
+  .grid > .m > .c4 > .col2 {grid-column: c4col2-start / c4col2-end;}
+  .grid > .m > .c4 > .col3 {grid-column: c4col3-start / c4col3-end;}
+  
+  .grid > .m > .c5 > .col1 {grid-column: c5col1-start / c5col1-end;}
+  .grid > .m > .c5 > .col2 {grid-column: c5col2-start / c5col2-end;}
+  .grid > .m > .c5 > .col3 {grid-column: c5col3-start / c5col3-end;}
+  
+  .grid > .m > .c6 > .col1 {grid-column: c6col1-start / c6col1-end;}
+  .grid > .m > .c6 > .col2 {grid-column: c6col2-start / c6col2-end;}
+  .grid > .m > .c6 > .col3 {grid-column: c6col3-start / c6col3-end;}
+  
+  .grid > .s > .c7 > .col1 {grid-column: c7col1-start / c7col1-end;}
+  .grid > .s > .c7 > .col2 {grid-column: c7col2-start / c7col2-end;}
+  .grid > .s > .c7 > .col3 {grid-column: c7col3-start / c7col3-end;}
+  
+  .grid > .s > .c8 > .col1 {grid-column: c8col1-start / c8col1-end;}
+  .grid > .s > .c8 > .col2 {grid-column: c8col2-start / c8col2-end;}
+  .grid > .s > .c8 > .col3 {grid-column: c8col3-start / c8col3-end;}
+  
+  .col2 {
+	display: grid;
+	width: var(--colWidth);
+	grid-column: col2-start / col2-end;
+	background-color: var(--testCol);
+  }
+  .col3 { 
+	display: grid;
+	width: var(--colWidth);
+	grid-column: col3-start / col3-end;
+	background-color: var(--testCol);
+  }
+  
+  .grid > .m > .c1 {display: grid; 
+	grid-column: c1-start / c1-end; 
+	grid-template-columns:
+	  [c1col1-start] var(--colWidth) [c1col1-end]
+	  var(--g)
+	  [c1col2-start] var(--colWidth) [c1col2-end]
+	  var(--g)
+	  [c1col3-start] var(--colWidth) [c1col3-end];
+  }
+  
+  .grid > .m > .c2 {display: grid; 
+	grid-column: c2-start / c2-end; 
+	grid-template-columns:
+	  [c2col1-start] var(--colWidth) [c2col1-end]
+	  var(--g)
+	  [c2col2-start] var(--colWidth) [c2col2-end]
+	  var(--g)
+	  [c2col3-start] var(--colWidth) [c2col3-end];
+  }
+  
+  .grid > .m > .c3 {display: grid; 
+	grid-column: c3-start / c3-end; 
+	grid-template-columns:
+	  [c3col1-start] var(--colWidth) [c3col1-end]
+	  var(--g)
+	  [c3col2-start] var(--colWidth) [c3col2-end]
+	  var(--g)
+	  [c3col3-start] var(--colWidth) [c3col3-end];
+  }
+  
+  .grid > .m > .c4 {display: grid; 
+	grid-column: c4-start / c4-end; 
+	grid-template-columns:
+	  [c4col1-start] var(--colWidth) [c4col1-end]
+	  var(--g)
+	  [c4col2-start] var(--colWidth) [c4col2-end]
+	  var(--g)
+	  [c4col3-start] var(--colWidth) [c4col3-end];
+  }
+  
+  .grid > .m > .c5 {display: grid; 
+	grid-column: c5-start / c5-end; 
+	grid-template-columns:
+	  [c5col1-start] var(--colWidth) [c5col1-end]
+	  var(--g)
+	  [c5col2-start] var(--colWidth) [c5col2-end]
+	  var(--g)
+	  [c5col3-start] var(--colWidth) [c5col3-end];
+  }
+  
+  .grid > .m > .c6 {display: grid; 
+	grid-column: c6-start / c6-end; 
+	grid-template-columns:
+	  [c6col1-start] var(--colWidth) [c6col1-end]
+	  var(--g)
+	  [c6col2-start] var(--colWidth) [c6col2-end]
+	  var(--g)
+	  [c6col3-start] var(--colWidth) [c6col3-end];
+  }
+  
+  .grid > .s > .c7 {display: grid; 
+	grid-column: c7-start / c7-end; 
+	grid-template-columns:
+	  [c7col1-start] var(--colWidth) [c7col1-end]
+	  var(--g)
+	  [c7col2-start] var(--colWidth) [c7col2-end]
+	  var(--g)
+	  [c7col3-start] var(--colWidth) [c7col3-end];
+  }
+  
+  .grid > .s > .c8 {display: grid; 
+	grid-column: c8-start / c8-end; 
+	grid-template-columns:
+	  [c8col1-start] var(--colWidth) [c8col1-end]
+	  var(--g)
+	  [c8col2-start] var(--colWidth) [c8col2-end]
+	  var(--g)
+	  [c8col3-start] var(--colWidth) [c8col3-end];
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

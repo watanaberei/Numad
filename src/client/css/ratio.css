@@ -1,0 +1,15 @@
+.ratio1x1 {
+    aspect-ratio: 1 / 1;
+}
+
+.ratio1x2 {
+    aspect-ratio: 1 / 2;
+}
+
+.ratio2x1 {
+    aspect-ratio: 2 / 1;
+}
+
+.ratioPlatinum {
+    aspect-ratio: 1.414 / 1;
+}

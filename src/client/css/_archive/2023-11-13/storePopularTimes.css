@@ -1,0 +1,63 @@
+        .chart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            
+            background-color: teal;
+            height:300px;
+            width: 900px;
+        }
+
+        .chart {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            margin-bottom: 15px;
+        }
+
+        .day-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hour {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+        }
+
+        .hour-label {
+            font-weight: normal;
+            margin-right: 10px;
+        }
+
+        .current-hour .hour-label {
+            font-weight: bold;
+        }
+
+        .bar {
+            width: 20px;
+            margin: 2px;
+            background-color: #888;
+        }
+
+        .current-time {
+            background-color: blue;
+        }
+
+        .not-busy {
+            color: green;
+        }
+
+        .moderately-busy {
+            color: yellow;
+        }
+
+        .busy {
+            color: orange;
+        }
+
+        .packed {
+            color: red;
+        }

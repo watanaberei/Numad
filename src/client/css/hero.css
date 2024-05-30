@@ -1,0 +1,233 @@
+.hero {
+  background: #2e4237;
+  padding: 0px 30px 0px 30px;
+  width: 100vw;
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero .hero-media,
+.hero .hero-media * {
+  box-sizing: border-box;
+}
+.hero .hero-media {
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  /* height: 591px; */
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/* .hero-media .button {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: absolute;
+    right: 45px;
+    bottom: 45px;
+  }
+  .button-floating {
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .button-floating .container {
+    background: #f7f8fd;
+    border-radius: 9px;
+    border-style: solid;
+    border-color: var(--gray-6, #f2f2f2);
+    border-width: 1px;
+    padding: 13.5px 15px 13.5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(7.5px);
+  } */
+
+
+
+
+
+
+
+
+  .hero .hero-media .button {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .hero .hero-media .button .button-floating {
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .hero .hero-media .button .button-floating .container {
+    background: #f7f8fd;
+    border-radius: 9px;
+    border-style: solid;
+    border-color: var(--gray-6, #f2f2f2);
+    border-width: 1px;
+    padding: 13.5px 15px 13.5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(7.5px);
+  }
+  .label-glyph {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .safe {
+    color: var(--ink-b, #101011);
+    text-align: left;
+    font-family: "HelveticaNeue-Medium", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    opacity: 0.800000011920929;
+    position: relative;
+  }
+  .glyph {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .glyph-temp {
+    background: rgba(192, 255, 111, 0.75);
+    border-radius: 333px;
+    border-style: solid;
+    border-color: #c0ff6f;
+    border-width: 1px;
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heroMedia .media,
+.heroMedia .media * {
+  box-sizing: border-box;
+}
+.heroMedia .media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+}
+.media-platinum {
+    aspect-ratio: 2.141 / 1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    /* height: 690px; */
+    width: 100vw;
+    padding: 0px 30px 0px 30px;
+    position: relative;
+    overflow: hidden;
+}
+.image-featured {
+    background: #a76e6e;
+    border-radius: 30px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+  

@@ -1,0 +1,23 @@
+.partners-google-logo-30 {
+    background: url('./../assets/partners/brand/google/asset-partners-logo-google-30.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+  }
+
+  .partners-yelp-logo-30 {
+    background: url('./../assets/partners/brand/yelp/asset-partners-logo-yelp-30.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+  }
+
+  .partners-infatuated-logo-30 {
+    background: url('./../assets/partners/brand/infatuated/asset-partners-logo-infatuated-30.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+  }

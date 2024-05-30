@@ -1,0 +1,51 @@
+/* RULES */
+.lineH {
+    background-color: var(--grey06);
+    border-bottom: solid;
+    border-color: var(--grey01);
+
+    width: 100%;
+  }
+  
+  .lineV {
+    background-color: var(--grey03);
+    border-bottom: solid;
+    border-color: var(--grey03);
+  
+    width: 100%;
+  }
+
+    /* s## is spacing ## */
+  .lineH.s60 {
+    background-color: var(--grey06);
+    border-bottom: solid;
+    border-color: var(--grey06);
+    height: 1px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+    /* s## is spacing ## */
+    .lineH.s30 {
+      background-color: var(--grey06);
+      border-bottom: solid;
+      border-color: var(--grey06);
+      height: 1px;
+      width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .lineH.s21 {
+    background-color: var(--grey06);
+    border-bottom: solid;
+    border-color: var(--grey06);
+    height: 1px;
+    width: 100%;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+
+
+  .work .lineH {
+    border: #EAF2F4;
+  }

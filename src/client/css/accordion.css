@@ -1,0 +1,541 @@
+
+.accordion .store-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion .item {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 45px;
+  position: relative;
+}
+.accordion .title {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.accordion .collapse {
+  padding: 6px 0px 3px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 15px;
+  position: relative;
+}
+.accordion .expand {
+  flex-shrink: 0;
+  width: 9.53px;
+  height: 6px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .text {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
+  position: relative;
+}
+.accordion .coffee-shop-bakery {
+  color: #12120f;
+  text-align: left;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  flex: 1;
+}
+.accordion .indicator {
+  background: linear-gradient(
+      to left,
+      rgba(89, 208, 87, 0.75),
+      rgba(89, 208, 87, 0.75)
+    ),
+    linear-gradient(to left, #59d057, #59d057);
+  border-radius: 3px;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion ._93-recommended {
+  color: var(--inkb, #101011);
+  text-align: left; 
+  font-family: "HelveticaNeue-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.accordion .details {
+  background: #f7f8fd;
+  border-style: solid;
+  border-color: #d8e1e3;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion .section {
+  padding: 0px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion .item2 {
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion .text2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.accordion ._714-646-9652 {
+  color: var(--ink, #101011);
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  position: relative;
+}
+.accordion .glyph-action-copy {
+  padding: 0px 3px 0px 3px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .call {
+  color: #12120f;
+  text-align: left;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  text-decoration: underline;
+  position: relative;
+}
+.accordion .divider {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.accordion .roaster-goldenstate-coffee {
+  color: var(--ink, #101011);
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  position: relative;
+}
+.accordion .glyph-action-copy2 {
+  padding: 0px 3px 0px 3px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .frame-22445 {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion .email {
+  color: #12120f;
+  text-align: left;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  text-decoration: underline;
+  position: relative;
+}
+.accordion .divider2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.accordion .goldenstate-coffee {
+  color: var(--ink, #101011);
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  position: relative;
+}
+.accordion .glyph-action-copy3 {
+  padding: 0px 3px 0px 3px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .visit {
+  color: #12120f;
+  text-align: left;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  position: relative;
+}
+.accordion .glyph-link {
+  flex-shrink: 0;
+  width: 7.75px;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .divider3 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.accordion .button {
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion .text3 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion .see-links {
+  color: #12120f;
+  text-align: left;
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
+  position: relative;
+}
+.accordion .collapse2 {
+  padding: 0px 0px 4px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 15px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, -1);
+}
+.accordion .expand2 {
+  flex-shrink: 0;
+  width: 9.53px;
+  height: 6px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .title2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion .logo-source-instagram {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+  position: relative;
+}
+.accordion .mask-group {
+  flex-shrink: 0;
+  width: 14.03px;
+  height: 14.03px;
+  position: static;
+}
+.accordion .image-707 {
+  width: 14.03px;
+  height: 14.03px;
+  position: absolute;
+  left: -1.52px;
+  top: -1.52px;
+  object-fit: cover;
+}
+.accordion .image-708 {
+  background: #101011;
+  width: 19.85px;
+  height: 19.85px;
+  position: absolute;
+  left: -4.43px;
+  top: -4.43px;
+}
+.accordion .instagram {
+  color: var(--ink, #101011);
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  position: relative;
+}
+.accordion .glyph-link2 {
+  flex-shrink: 0;
+  width: 7.75px;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .divider4 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.accordion .logo-source-facdbook {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+  position: relative;
+}
+.accordion .mask-group2 {
+  flex-shrink: 0;
+  width: 13.82px;
+  height: 13.82px;
+  position: static;
+}
+.accordion .image-7072 {
+  width: 13.82px;
+  height: 13.82px;
+  position: absolute;
+  left: -1.41px;
+  top: -1.41px;
+  object-fit: cover;
+}
+.accordion .image-7082 {
+  background: #101011;
+  width: 18.48px;
+  height: 18.48px;
+  position: absolute;
+  left: -3.74px;
+  top: -3.74px;
+}
+.accordion .facebook {
+  color: var(--ink, #101011);
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  position: relative;
+}
+.accordion .glyph-link3 {
+  flex-shrink: 0;
+  width: 7.75px;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .divider5 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.accordion .infatuated {
+  color: var(--ink, #101011);
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  position: relative;
+}
+.accordion .glyph-link4 {
+  flex-shrink: 0;
+  width: 7.75px;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .divider6 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.accordion .google {
+  color: var(--ink, #101011);
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  position: relative;
+}
+.accordion .glyph-link5 {
+  flex-shrink: 0;
+  width: 7.75px;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}
+.accordion .divider7 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.accordion .yelp {
+  color: var(--ink, #101011);
+  text-align: left;
+  font-family: "HelveticaNeue-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  position: relative;
+}
+.accordion .glyph-link6 {
+  flex-shrink: 0;
+  width: 7.75px;
+  height: 11px;
+  position: relative;
+  overflow: visible;
+}

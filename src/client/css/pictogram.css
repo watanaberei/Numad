@@ -1,0 +1,58 @@
+.pictogram {
+    
+}
+
+/* amenities */
+.pictogram-amenities-wifi-30 {
+    background: url('./../assets/pictogram/amenities/pictogram-amenities-wifi.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+}
+
+.pictogram-amenities-outlet-30 {
+    background: url('./../assets/pictogram/amenities/pictogram-amenities-outlet.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+}
+
+
+
+/* facility */
+.pictogram-facility-indoor-30 {
+    background: url('./../assets/pictogram/facility/pictogram-facility-indoor.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+}
+
+.pictogram-facility-outdoor-30 {
+    background: url('./../assets/pictogram/facility/pictogram-facility-outdoor.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+}
+
+
+
+/* facility */
+.pictogram-table-indoor-30 {
+    background: url('./../assets/pictogram/table/pictogram-table-indoor.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+}
+
+.pictograph-table-outdoor-30 {
+    background: url('./../assets/pictogram/table/pictograph-table-outdoor.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    /* Other styles here */
+}
