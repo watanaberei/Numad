@@ -157,7 +157,7 @@ export const attrTag = {
                                 <span class="text03">${data.key}</span>
                                 <span class="text03">
                                     <span class="div">(</span>
-                                    <span class="text03">${data.value}</span>
+                                    <span class="text03">${data.value[0]}</span>
                                     <span class="div">)</span>
                                 </span>
                             </span>
@@ -301,6 +301,15 @@ export const statTag = {
                     <!--</div>-->
                 </div>
             </div>
+            <!--
+            <div class="stattag loading">
+                <div class="tag">
+                    <span class="text03">   
+                        ${text}
+                    </span>
+                </div>
+            </div>
+            -->
         `;
     },
 };

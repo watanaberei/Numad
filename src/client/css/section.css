@@ -142,7 +142,7 @@
 }
 .section > .attributes {
   z-index: 0;
-  display: grid;
+  display: grid !important;
   grid-template-columns: 1fr 1fr;
   flex-direction: row;
   gap: 12px;
@@ -155,6 +155,7 @@
 .section > .attributes > .card {
     background: #f7f8fd;
     border-radius: 9px;
+  display: grid !important;
     border-style: solid;
     border-color: #eaf2f4;
     border-width: 1px;
@@ -174,7 +175,7 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-shrink: 0;
-    width: 419px;
+    /*   */
     height: 168px;
     position: relative;
     overflow: hidden;
@@ -814,7 +815,8 @@ summary > .list > .bullets > .item > .icon {
 .section.store-experience.experience .overview {
   grid-row: 1 span;
   background: #fdfdfd;
-  grid-column: 1 / -1;
+  display: grid;
+  grid-column: inherit;
   /* padding: 78px; */
   /* width: 100%; */
   overflow: hidden;
@@ -1267,9 +1269,10 @@ summary > .list > .bullets > .item > .icon {
   align-items: flex-start;
   justify-content: space-between;
   flex-shrink: 0;
-  width: 419px;
+  /* width: 419px; */
   height: 168px;
   position: relative;
+  display: grid !important;
   overflow: hidden;
 }
 .store-experience.experience .primary {

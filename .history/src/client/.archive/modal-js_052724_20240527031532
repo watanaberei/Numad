@@ -1,0 +1,275 @@
+import { format, parseISO } from "date-fns";
+import * as element from "./elements.js";
+
+export const modals = {
+  init: function() {
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log("DOMContentLoaded - Modals are being initialized");
+
+      const bindModal = (targetModel) => {
+        let modal = document.getElementById(targetModel);
+        console.log(`Attempting to bind model: ${targetModel}`);
+
+        if (modal) {
+          console.log(`Modal found: ${targetModel}`);
+          document.getElementById(`${targetModel}-close`).onclick = function() {
+            modal.style.display = "none";
+            console.log(`Closing modal: ${targetModel}`);
+          };
+          modal.style.display = "block";
+          window.onclick = function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+              console.log(`Clicked outside to close modal: ${targetModel}`);
+            }
+          };
+        } else {
+          console.log(`Modal not found: ${targetModel}`);
+        }
+      };
+
+      const myBtn = document.getElementById("myBtn");
+      const myBtn1 = document.getElementById("myBtn1");
+      const accountBtn = document.getElementById("account-btn");
+
+      if (myBtn) {
+        console.log("Button myBtn found, attaching click event");
+        myBtn.onclick = function() {
+          console.log("myBtn clicked");
+          bindModal("myModal");
+        };
+      } else {
+        console.log("Button myBtn not found");
+
+      }
+
+      if (myBtn1) {
+        console.log("Button myBtn1 found, attaching click event");
+        myBtn1.onclick = function() {
+          console.log("myBtn1 clicked");
+          bindModal("myModal1");
+        };
+      } else {
+        console.log("Button myBtn1 not found");
+      }
+      
+      if (accountBtn) {
+        console.log("Button accountBtn found, attaching click event");
+        accountBtn.onclick = function() {
+          console.log("accountBtn clicked");
+          bindModal("myModalAccount");
+        };
+      } else {
+        console.log("Button myBtn1 not found");
+      }
+      
+    });
+  }
+};
+
+
+
+
+
+
+
+
+  ///////////////////////////////////////////////////////
+  //////////////////////// MODAL ////////////////////////
+  ///////////////////////////////////////////////////////
+  export const modalGallery = (modalGalleryData) => {
+    const gallery = modalGalleryData.gallery || [];
+    const area = modalGalleryData.area || [];
+
+    function modalGalleryHTML(gallery) {
+      console.log('gallery', gallery);
+      // Generate the HTML
+      let mediaGalleryHTML = "";
+      gallery.forEach((array) => {
+        mediaGalleryHTML += `
+        <div class="media-img-m">
+            <div class="media-img">
+                <img src="${array.url}" class="gallery-item-img media-img-1-x-1-x-m" alt="" />
+            </div>
+            <!--
+            <div class="text2">
+                <span class="caption">
+                    <span class="icon">
+                        <i class="icon-container2"></i>
+                    </span>
+                    <span class="text03 bold">
+                        ${array.description}
+                    </span>
+                </span>
+            </div>
+            -->
+        </div>
+              `;
+      });
+      return mediaGalleryHTML; // Add this line
+    }
+
+    function modalAreaHTML(area) {
+      console.log('area', area);
+      // Generate the HTML
+      let mediaAreaHTML = "";
+      area.forEach((array) => {
+        mediaAreaHTML += `
+              <div class="media-img-m">
+                  <div class="media-img">
+                      <img src="${array.url}" class="gallery-item-img media-img-1-x-1-x-m" alt="" />
+                  </div>
+                  <div class="text2">
+                      <span class="caption">
+                          <span class="icon">
+                              <i class="icon-container2"></i>
+                          </span>
+                          <span class="text03 bold">
+                              ${array.description}
+                          </span>
+                      </span>
+                  </div>
+              </div>
+              `;
+      });
+      return mediaAreaHTML; // Add this line
+    }
+
+    const mediaGallery = modalGalleryHTML(gallery);
+    const mediaArea = modalAreaHTML(area);
+
+    
+    
+    const modalHTML = `
+      <button id="myBtn">Open Modal</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          
+          <span class="header03">Gallery</p>
+          <div class="gallery mediaGallery">
+            ${mediaGallery}
+          </div>
+          
+          <span class="header03">Area</p>
+          <div class="gallery mediaArea">
+            ${mediaArea}
+          </div>
+        </div>
+      </div>
+      
+    `;
+  
+    document.addEventListener('click', (event) => {
+      if (event.target.matches('.modal-close') || event.target.matches('.modal')) {
+        document.getElementById('myModal').style.display = 'none';
+      } else if (event.target.matches('#myBtn')) {
+        document.getElementById('myModal').style.display = 'block';
+      }
+    });
+  
+    return modalHTML;
+  };
+  ///////////////////////////////////////////////////////
+  //////////////////////// MODAL ////////////////////////
+  ///////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////// MODALACCOUNT ////////////////////
+//////////////////////////////////////////////////////
+export const modalAccount = () => {
+
+  function modalAccountHTML() {
+    // Generate the HTML
+    let modalAccountObj = "";
+    modalAccountObj += `
+      <!------ MODALACCOUNT ------>
+      <div class="account-header">
+        <!------ HEADLINE ------>
+        <div class="account-headline">
+          <fieldset class="step-hide">
+            <div class="title">
+              <span class="header06">
+                  Log in or create an account
+              </span>
+            </div>
+            <div class="form-container">
+              <span class="text02 medium">
+                Enter your email
+              </span>
+              <form id="account-form">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </fieldset>
+        </div>
+        <!------ HEADLINE ------>
+      </div>
+      <!------ SIGNUP HEADER ------>
+            `;
+
+    return modalAccountObj;
+  }
+    
+  const modalAccountDom = modalAccountHTML();
+    
+  const modalAccount = `
+      <button id="account-btn">Account</button>
+      <div id="myModalAccount" class="modal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <div class="gallery mediaGallery">
+            ${modalAccountDom}
+          </div>
+        </div>
+      </div>
+  `;
+
+  const after_render = async () => {
+    document.getElementById('account-form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      // Add your authentication code here
+    });
+
+    document.addEventListener('click', (event) => {
+      if (event.target.matches('.modal-close') || event.target.matches('.modal')) {
+        document.getElementById('myModalAccount').style.display = 'none';
+      } else if (event.target.matches('#account-btn')) {
+        document.getElementById('myModalAccount').style.display = 'block';
+      }
+    });
+  };
+
+  after_render();
+
+  return modalAccount;
+};
+
+
+
+
+
+
+
+
+
+//   return {
+//     render: async () => modalAccountButton,
+//     after_render
+//   };
+// };
+
+
+ 
+
+
+

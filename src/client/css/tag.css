@@ -1,11 +1,22 @@
 /************************ TAG ************************/
 /************************ TAG ************************/
 /************************ TAG ************************/
+/* CONTAINER */
+.card-store .thumbnail .tag-container {
+  position: absolute;
+  z-index: 3;
+  padding: 3px;
+}
+
+
+
+
 /* GLOBAL */
-.card-store .content .tag {
+.card-store .thumbnail .tag-container .tag {
   display: flex;
+  /* background-color: var(--tag06); */
   flex-direction: row;
-  gap: var(--s00, 3px);
+  gap: var(--s01, 1px);
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -14,6 +25,7 @@
   /* height: 28px; */
   position: relative;
 }
+
 
 
 
@@ -52,7 +64,7 @@
 }
 .stattag span {
   display: flex;
-  color: var(--inkw03);
+  color: var(--grey03);
   line-height: 15px !important;
   flex-direction: row;
   gap: 0px;
@@ -585,6 +597,8 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  background-color: var(--grey03);
+  border-radius: var(--border-radius03);
 }
 .metatag .tag {
   /* background: linear-gradient(
@@ -593,12 +607,12 @@
       rgba(73, 121, 142, 0.06)
     ),
     linear-gradient(to left, #f8f8f8, #f8f8f8); */
-  border-radius: 6px;
-  border-style: solid;
-  border-color: rgba(111, 115, 121, 0.3);
-  border-width: 1px;
+  /* border-radius: 6px; */
+  /* border-style: solid; */
+  /* border-color: rgba(111, 115, 121, 0.3);
+  border-width: 1px; */
   /* padding: 6px 12px 6px 12px; */
-  padding: 7px 12px 5px 12px;
+  padding: 0px 6px 0px 6px;
   display: flex;
   flex-direction: row;
   gap: 1.5px;
@@ -621,8 +635,9 @@
   line-height: 15px !important;
   display: flex;
   flex-direction: row;
+  padding: 3px 0px 0px 0px;
   gap: 0px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;

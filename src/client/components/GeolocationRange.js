@@ -46,7 +46,7 @@ export const storeRange = {
       return "Driving Distance";
     } else if (currentRange > 12 && currentRange <= 21) {
       return "~2hr Drive";
-    } else if (currentValue > 12 && currentValue <= 21) {
+    } else if (currentRange > 12 && currentRange <= 21) {
       return "1hr+ Drive";
     } else {
       return "PACKED";

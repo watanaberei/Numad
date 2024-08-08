@@ -155,7 +155,12 @@ const createStoreCard = {
         resolve(`
           <!--$ {cardEyebrow}-->
           <div class="thumbnail loading">
-              ${mediaThumbnail}   
+              ${mediaThumbnail} 
+              <div class="tag-container">
+                <div class="tag">
+                    ${metaTag}
+                </div>  
+              </div>
           </div>
           <div class="content loading">
             <div class="detail loading">
@@ -177,9 +182,6 @@ const createStoreCard = {
               <div class="attributes">
                   ${attrTag}
               </div>
-          </div>
-          <div class="tag">
-              ${metaTag}
           </div>`);
       }, 600); // 600ms delay
     });
