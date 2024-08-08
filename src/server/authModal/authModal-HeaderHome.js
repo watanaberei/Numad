@@ -2,9 +2,13 @@
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import DineScreen from '../screens/DineScreen.js';
-import { modalAccount } from '../components/modal.js';
+import * as modal from '../components/modal.js';
+// import { modalAccount } from './modal.js';
+
 
 let lastSelectedResult = null;
+let modalAccountButton;
+// let modals;
 // Initialize the geocoder only once
 var geocoder = new MapboxGeocoder({
   accessToken: mapboxgl.accessToken,
@@ -13,22 +17,6 @@ var geocoder = new MapboxGeocoder({
   flyTo: false
 });
 
-// const login = async () => {
-//   await auth0.loginWithRedirect({
-//       redirect_uri: window.location.href
-//   });
-// };
-
-// const signup = () => {
-//   console.log('signup function called.');
-//   console.log('Signup button clicked.');
-
-//   // Redirect to the signup page
-//   window.location.href = '/signup';
-
-//   console.log('Redirecting to /signup...');
-// };
-
 // Attach the 'result' event listener only once
 geocoder.on('result', function(e) {
   lastSelectedResult = e.result;
@@ -36,8 +24,13 @@ geocoder.on('result', function(e) {
 
 const HeaderHome = {
   render: async () => {
+    const { modalAccount: modalAccountHTML } = await modal.modalAccount();
+    // const modalAccountButtonHTML = await modalAccountButton.render();
+    // console.log("!!!!modalAccountButtonHTML", modalAccountButtonHTML);
+    // console.log("!!!!modalAccountButton", modalAccountButton);
+    
     const isAuthenticated = localStorage.getItem('accessToken') !== null;
-
+  
     return `
           <nav class="nav navigation container nav-top">
             <section class="grid base nav-main">
@@ -102,11 +95,12 @@ const HeaderHome = {
               </div>
               <div class="nav-main-right right">
                 <div class="nav-main-right-container">
-                  <a href="/account">
+                  <!--<a href="/account">
                     <button id="btn-account">
                       Account
                     </button>
-                  </a>
+                  </a>-->
+                  ${modalAccountHTML}
                   ${localStorage.getItem('accessToken') !== null ? `
                     <button id="btn-logout">
                       Log out
@@ -129,6 +123,8 @@ const HeaderHome = {
     `;
   },
   after_render: async (map) => {
+     const { after_render } = await modal.modalAccount();
+    after_render();
     console.log('after_render function called');
     // Detach the geocoder from any previous map instance
 
@@ -144,40 +140,46 @@ const HeaderHome = {
     });
     
     
+    const { modalAccount: modalAccountHTML } = await modal.modalAccount();
+    document.body.innerHTML += modalAccountHTML; // or however you're adding modalAccount to the DOM
 
-    // // Add event listener to the login button
-    // document.getElementById('btn-signup').addEventListener('click', function() {
-    //   console.log('Signup button clicked.');
-
-    //   // Redirect to the login page
-    //   window.signup = signup;
-
-    //   console.log('Redirecting to /signup...');
+    // await modalAccountButton.after_render(); // Now modalAccountButton is accessible here
+    
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   const modals = modal.modals();
+    //   modals.modal.init();
     // });
 
-    //  // Log the result of document.getElementById('btn-signup')
-    // console.log('btn-signup element:', document.getElementById('btn-signup'));
-    const btnAccount = document.getElementById('btn-account');
-
-
-
     const isAuthenticated = localStorage.getItem('accessToken') !== null;
+    // const modalAccount = modal.modalAccount();
 
-    if (isAuthenticated) {
-      document.getElementById('btn-logout').addEventListener('click', function() {
-        // Log out the user
-        localStorage.removeItem('accessToken');
-        localStorage.removeItem('refreshToken');
+    // modal.modals.init();
 
-        // Redirect to the home page
-        window.location.href = '/';
-      });
-    } else {
-      document.getElementById('btn-account').addEventListener('click', function() {
-        // Redirect to the account page
-        window.location.href = '/account';
-      });
-    }
+    // if (isAuthenticated) {
+    //   document.getElementById('btn-logout').addEventListener('click', function() {
+    //     console.log('Logout button clicked');
+    //     // Log out the user
+    //     localStorage.removeItem('accessToken');
+    //     localStorage.removeItem('refreshToken');
+
+    //     // Redirect to the home page
+    //     window.location.href = '/';
+    //   });
+    // } else {
+    //   const accountBtn = document.getElementById('account-btn');
+    //   if(accountBtn) {
+    //     accountBtn.addEventListener('click', function(event) {
+    //       console.log('Account button clicked');
+    //       event.preventDefault();
+      
+    //       // Use modals.modalAccount to initialize the modal
+    //       const modals = modal.modals();
+    //       modals.modal.init();
+    //     });
+    //   } else {
+    //     console.log('Account button not found');
+    //   }
+    // }
 
 
     if (localStorage.getItem('accessToken') !== null) {
@@ -192,11 +194,6 @@ const HeaderHome = {
     }
 
   },
-  
-
-
-
-
 
   getLastSelectedResult: () => lastSelectedResult
 };

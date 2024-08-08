@@ -5,7 +5,7 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import http from 'http';
-import User from "./mongodb.js";
+import User from "../mongodb.js";
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
@@ -27,18 +27,38 @@ let refreshTokens = []
 
 
 app.post('/login', async (req, res) => {
-   const email = req.body.email;
-   const password = req.body.password;
+  const email = req.body.email;
+  const password = req.body.password;
+
+  const user = await User.findOne({ email: email });
+
+  if (user) {
+    if (await bcrypt.compare(password, user.password)) {
+      const accessToken = jwt.sign({ user: user.email }, process.env.ACCESS_TOKEN_SECRET);
+      res.json({ accessToken: accessToken });
+    } else {
+      res.status(401).send('Incorrect password');
+    }
+  } else {
+    res.status(200).json({ user: null });
+  }
+});
+
+
+// app.post('/login', async (req, res) => {
+//    const email = req.body.email;
+//    const password = req.body.password;
  
-   const user = await User.findOne({ email: email });
+//    const user = await User.findOne({ email: email });
  
-   if (user && await bcrypt.compare(password, user.password)) {
-     const accessToken = jwt.sign({ user: user.email }, process.env.ACCESS_TOKEN_SECRET);
-     res.json({ accessToken: accessToken });
-   } else {
-     res.status(401).send('Login failed');
-   }
- });
+//    if (user && await bcrypt.compare(password, user.password)) {
+//      const accessToken = jwt.sign({ user: user.email }, process.env.ACCESS_TOKEN_SECRET);
+//      res.json({ accessToken: accessToken });
+//    } else {
+//      res.status(401).send('Login failed');
+//    }
+//  });
+
 
 
 // app.post('/login', async (req, res) => {
