@@ -1,4 +1,4 @@
-// ../components/HeaderHome.js
+// ../components/HeaderUser.js
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import DineScreen from '../screens/DineScreen.js';
