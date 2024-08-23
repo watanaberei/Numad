@@ -1,0 +1,123 @@
+import { format, parseISO } from "date-fns";
+import * as element from "./elements.js";
+
+
+export const userControl = {
+  render: (store) => {
+    const dividerH = element.dividerH.render();
+    const dividerV = element.dividerV.render();
+
+    const count=333;
+    const countDefault = element.countDefault.render(count);
+    const countParenthesis = element.countDefault.render(count);
+
+        return `
+    <div class="user-controls">
+    ${dividerH}
+    <div class="content">
+      <div class="info">
+        <div class="contributions">
+          <div class="icon">
+            <img class="icon-user-rating" src="icon-user-rating0.svg" />
+          </div>
+          ${countDefault}
+        </div>
+
+
+
+
+        ${dividerV}
+
+
+
+        <div class="modified">
+          <span class="label">
+            <span class="text02">Modified</span>
+          </span>
+          <div class="count">
+            <span class="text02 date">
+              <span class="text02">06</span>
+              <span class="text02 divider-h">/</span>
+              <span class="text02">06</span>
+              <span class="text02 divider-h">/</span>
+              <span class="text02">24</span>
+              <span class="text02 divider-h">,</span>
+            </span>
+            <div class="time">
+              <div class="count">
+                <div class="text02">3</div>
+              </div>
+              <div class="text02 min">min</div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+      <div class="actions">
+        <div class="score">
+
+
+
+          <button class="comments">
+            <i class="icon-user-rating-comment-12px"></i>
+            <span class="label">
+              <span class="text02">Comments</span>
+              ${countParenthesis}
+            </span>
+          </button>
+
+
+          <button class="reviews">
+            <i class="icon-user-rating-review-12px"></i>
+            <span class="label">
+              <span class="text02">Reviews</span>
+              ${countParenthesis}
+            </span>
+          </button>
+
+
+        </div>
+
+
+
+        ${dividerV}
+
+
+
+        <div class="impressions">
+
+          <button class="impression-button like">
+            <i class="icon-user-rating-like-12px"></i>
+            <div class="count">
+              <div class="text02">333</div>
+            </div>
+          </button>
+
+          <button class="impression-button dislike">
+            <i class="icon-user-rating-dislike-12px"></i>
+            <div class="count">
+              <div class="text02">333</div>
+            </div>
+          </button> 
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+    
+  `;
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlString, 'text/html');
+  return doc.body.firstChild;
+},
+};

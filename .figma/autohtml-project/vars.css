@@ -1,0 +1,60 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  /* Fonts */
+  --numad-text02r-font-family: HelveticaNeue-Regular, sans-serif;
+  --numad-text02r-font-size: 12px;
+  --numad-text02r-line-height: 21px;
+  --numad-text02r-font-weight: 400;
+  --numad-text02r-font-style: normal;
+  --numad-text02m-font-family: HelveticaNeue-Medium, sans-serif;
+  --numad-text02m-font-size: 12px;
+  --numad-text02m-line-height: 21px;
+  --numad-text02m-font-weight: 500;
+  --numad-text02m-font-style: normal;
+  --numad-text02b-font-family: HelveticaNeue-Bold, sans-serif;
+  --numad-text02b-font-size: 12px;
+  --numad-text02b-line-height: 21px;
+  --numad-text02b-font-weight: 700;
+  --numad-text02b-font-style: normal;
+  --numad-text03r-font-family: HelveticaNeue-Regular, sans-serif;
+  --numad-text03r-font-size: 15px;
+  --numad-text03r-line-height: 30px;
+  --numad-text03r-font-weight: 400;
+  --numad-text03r-font-style: normal;
+  --numad-text03m-font-family: HelveticaNeue-Medium, sans-serif;
+  --numad-text03m-font-size: 15px;
+  --numad-text03m-line-height: 30px;
+  --numad-text03m-font-weight: 500;
+  --numad-text03m-font-style: normal;
+  --numad-text03b-font-family: HelveticaNeue-Bold, sans-serif;
+  --numad-text03b-font-size: 15px;
+  --numad-text03b-line-height: 30px;
+  --numad-text03b-font-weight: 700;
+  --numad-text03b-font-style: normal;
+  --numad-text04m-font-family: HelveticaNeue-Medium, sans-serif;
+  --numad-text04m-font-size: 24px;
+  --numad-text04m-line-height: 30px;
+  --numad-text04m-font-weight: 500;
+  --numad-text04m-font-style: normal;
+  --numad-text05m-font-family: HelveticaNeue-Medium, sans-serif;
+  --numad-text05m-font-size: 45px;
+  --numad-text05m-line-height: 45px;
+  --numad-text05m-font-weight: 500;
+  --numad-text05m-font-style: normal;
+  --numad-text06m-font-family: HelveticaNeue-Medium, sans-serif;
+  --numad-text06m-font-size: 75px;
+  --numad-text06m-line-height: 69px;
+  --numad-text06m-font-weight: 500;
+  --numad-text06m-font-style: normal;
+  --spec-measurement-font-family: HelveticaNeue-Regular, sans-serif;
+  --spec-measurement-font-size: 3px;
+  --spec-measurement-line-height: 3px;
+  --spec-measurement-font-weight: 400;
+  --spec-measurement-font-style: normal;
+
+  /* Effects */
+  --blur01-backdrop-filter: blur(7.5px);
+  --shadow-box-shadow: 0px 1.5px 6px 0px rgba(0, 0, 0, 0.15);
+  --display-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
