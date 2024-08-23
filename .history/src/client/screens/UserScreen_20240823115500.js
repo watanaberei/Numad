@@ -53,12 +53,6 @@ const UserScreen = {
 
                         
                          
-                        <div class="container">
-                          <div id="postStores" class="postStores list"> 
-                            ${title.render('Nearby')}
-                          </div>
-                        </div>
-
                           <div class="container">
                             <div id="postStores" class="postStores list"> 
                               ${title.render('Checked-in')}

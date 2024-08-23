@@ -20,19 +20,8 @@ import * as element from "../components/elements.js";
 
 const UserScreen = {
   render: async () => {
-    let userCount = {
-      rating: 0,
-      review: 0,
-      comment: 0,
-      like: 0,
-      dislike: 0
-  }
-
-
-    const header = element.header;
-    const title = element.title;
-    const titleCounter = element.titleCounter;
-    
+    header = element.header();
+    title = element.title();
     return `
     <!------ User SCREEN ------> 
     <div class="main">
@@ -54,37 +43,10 @@ const UserScreen = {
                         
                          
                         <div class="container">
-                          <div id="postStores" class="postStores list"> 
-                            ${title.render('Nearby')}
-                          </div>
+                        <div class="list" id="listing-blog">
+
+                        <div id="postStores" class="postStores list"> 
                         </div>
-
-                          <div class="container">
-                            <div id="postStores" class="postStores list"> 
-                              ${title.render('Checked-in')}
-                            </div>
-                          </div>
-
-                          <div class="container">
-                            <div id="postStores" class="postStores list"> 
-                              ${title.render('Saved')}
-                            </div>
-                          </div>
-
-                          <div class="container">
-                            <div id="postStores" class="postStores list"> 
-                              ${title.render('My Collecction')}
-                            </div>
-                          </div>
-
-                          <div class="container">
-                            <div id="postStores" class="postStores list"> 
-                              ${title.render('Recently Visisted')}
-                            </div>
-                          </div>
-
-
-
                               <div class="title">
                                 <span class="header06">
                                   Checked-in

@@ -378,8 +378,7 @@ background-color: #3A3AFF !important;
 }
 .user-controls .impression-button.active i {
   filter: invert(300%) sepia(300%) saturate(300%) hue-rotate(360deg) brightness(300%) contrast(300%);
-}
-/* button span.label {
+}z
   color: var(--inkw03) !important;
 } */
 .user-controls .impression-button.active span.label {

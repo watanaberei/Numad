@@ -54,46 +54,10 @@ const StoreSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  name: {
+  storeName: {
     type: String,
     required: true,
     unique: true
-  },
-  address: {
-    type: String,
-    required: true
-  },
-  streetNumber: {
-    type: String,
-    required: true
-  },
-  streetName: {
-    type: String,
-    required: true
-  },
-  state: {
-    type: String,
-    required: true
-  },
-  zip: {
-    type: String,
-    required: true
-  },
-  designator: {
-    type: String,
-    required: true
-  },
-  city: {
-    type: String,
-    required: true
-  },
-  zip: {
-    type: String,
-    required: true
-  },
-  designator: {
-    type: String,
-    required: true
   },
   likes: {
     type: Number,

@@ -44,8 +44,6 @@ app.post('/login', async (req, res) => {
   }
 });
 
-
-
 app.post('/api/impression', authenticateToken, async (req, res) => {
   console.log('Received impression request:', req.body);
   const { storeId, action } = req.body;
@@ -56,7 +54,7 @@ app.post('/api/impression', authenticateToken, async (req, res) => {
   console.log('Action:', action);
 
   try {
-    let user = await User.findOne({ email: userEmail });
+    const user = await User.findOne({ email: userEmail });
     if (!user) {
       console.log('User not found:', userEmail);
       return res.status(404).json({ message: 'User not found' });
@@ -67,29 +65,18 @@ app.post('/api/impression', authenticateToken, async (req, res) => {
     let store = await Store.findOne({ storeId });
     if (!store) {
       console.log('Store not found, creating new store:', storeId);
-      store = new Store({ storeId, likes: 0, dislikes: 0 });
+      store = new Store({ storeId });
     }
 
     console.log('Store before update:', store);
 
     const impressionUpdate = handleImpression(user, store, action, storeId);
     
-    console.log('User before update:', user);
-    console.log('Store before update:', store);
+    console.log('User before save:', user);
+    console.log('Store before save:', store);
 
-    // Update user document
-    user = await User.findOneAndUpdate(
-      { email: userEmail },
-      { $set: { likedStores: user.likedStores, dislikedStores: user.dislikedStores } },
-      { new: true }
-    );
-
-    // Update store document
-    store = await Store.findOneAndUpdate(
-      { storeId: storeId },
-      { $set: { likes: store.likes, dislikes: store.dislikes } },
-      { new: true, upsert: true }
-    );
+    await user.save();
+    await store.save();
 
     console.log('Impression update successful');
     console.log('Updated user:', user);
@@ -103,9 +90,6 @@ app.post('/api/impression', authenticateToken, async (req, res) => {
     res.status(500).json({ message: 'Error adding impression', error: error.message });
   }
 });
-
-
-
 
 function handleImpression(user, store, action, storeId) {
   console.log('Handling impression:', { user: user._id, store: store._id, action, storeId });

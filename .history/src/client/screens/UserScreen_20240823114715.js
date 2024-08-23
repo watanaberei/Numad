@@ -54,37 +54,11 @@ const UserScreen = {
                         
                          
                         <div class="container">
-                          <div id="postStores" class="postStores list"> 
-                            ${title.render('Nearby')}
-                          </div>
+                        <div class="list" id="listing-blog">
+                        ${title.render('Stores Checked-in')}
+
+                        <div id="postStores" class="postStores list"> 
                         </div>
-
-                          <div class="container">
-                            <div id="postStores" class="postStores list"> 
-                              ${title.render('Checked-in')}
-                            </div>
-                          </div>
-
-                          <div class="container">
-                            <div id="postStores" class="postStores list"> 
-                              ${title.render('Saved')}
-                            </div>
-                          </div>
-
-                          <div class="container">
-                            <div id="postStores" class="postStores list"> 
-                              ${title.render('My Collecction')}
-                            </div>
-                          </div>
-
-                          <div class="container">
-                            <div id="postStores" class="postStores list"> 
-                              ${title.render('Recently Visisted')}
-                            </div>
-                          </div>
-
-
-
                               <div class="title">
                                 <span class="header06">
                                   Checked-in

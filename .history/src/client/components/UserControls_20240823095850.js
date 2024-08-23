@@ -91,14 +91,14 @@ export const userControl = {
         ${dividerV}
 
           <div id="userImpression" class="impression disabled">
-            <button class="impression-button like active" onclick="storeActions.toggleImpression('${store.storeId}', 'like')">
+            <button class="impression-button like" onclick="storeActions.toggleImpression('${store.storeId}', 'like')">
               <i class="icon-user-rating-like-12px"></i>
-              <span class="label">${countDefault.render(count.countLike)}</span>
+              ${countDefault.render(count.countLike)}
             </button>
 
             <button class="impression-button dislike" onclick="storeActions.toggleImpression('${store.storeId}', 'dislike')">
               <i class="icon-user-rating-dislike-12px"></i>
-              <span class="label">${countDefault.render(count.countDislike)}</span>
+              ${countDefault.render(count.countDislike)}
             </button> 
           </div>
         </div>

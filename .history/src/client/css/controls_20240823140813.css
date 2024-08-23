@@ -350,7 +350,7 @@
   overflow: visible;
 }
 button span.label {
-  color:#3A3AFF !important;
+  color:#3A3AFF;
 }
 
 
@@ -359,12 +359,12 @@ button span.label {
 
 
 .user-controls .impression.disabled {
-    opacity: 1;
+    opacity: 0.5;
     pointer-events: none;
   }
   
 .user-controls .impression-button.active {
-background-color: #3A3AFF !important;
+background-color: #3A3AFF;
 }
 
 
@@ -377,11 +377,8 @@ background-color: #3A3AFF !important;
   padding: 0px var(--spacer-gap-s04, 6px) 0px var(--spacer-gap-s00, 0px);
 }
 .user-controls .impression-button.active i {
-  filter: invert(300%) sepia(300%) saturate(300%) hue-rotate(360deg) brightness(300%) contrast(300%);
+  filter: invert(100%) sepia(0%) saturate(300%) hue-rotate(360deg) brightness(100%) contrast(100%);
 }
-/* button span.label {
-  color: var(--inkw03) !important;
-} */
-.user-controls .impression-button.active span.label {
-  color: var(--inkw03) !important;
+button span.label {
+  color:var(--inkw03);
 }

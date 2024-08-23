@@ -5,7 +5,7 @@ import { userControl } from './UserControls.js';
 
 export const mediaHero = {
   render: (hero) => {
-    const mediaPlatinum = element.mediaPlatinum.render(hero.mediaGallery);
+    const mediaPlatinum = element.mediaPlatinum.render(hero.mediaPlatinum);
     // console.log("mediaPlatinum", mediaPlatinum);
     const neustarAward = element.neustarAward.render(hero.neustar);
     // console.log("neustarAward", neustarAward);

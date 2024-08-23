@@ -73,26 +73,12 @@ export const header = {
 export const title = {
   render: (text) => {
     return `
-      <div class="title">
-          <span class="text03 bold">
-              ${text}
-          </span>
-      </div>
-    `;
-  },
-};
-
-
-export const titleCounter = {
-  render: (text, count) => {
-    return `
-      <div class="title">
-          <span class="text03 bold">
-              ${text}
-          </span>
-      </div>
-      ${countParenthesis.render(count)}
-    `;
+            <div class="title">
+                <span class="text03 bold">
+                    ${text}
+                </span>
+            </div>
+            `;
   },
 };
 

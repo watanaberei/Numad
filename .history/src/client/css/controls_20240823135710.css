@@ -335,6 +335,14 @@
   flex-shrink: 0;
   position: relative;
 }
+.user-controls .impression-button .active {
+  background: var(--utility-blue-03, #3A3AFF);
+  border-radius: 3px;
+  border-style: solid;
+  border-color: var(--utility-blue-03, #3A3AFF);
+  border-width: 1px;
+  padding: 0px var(--spacer-gap-s04, 6px) 0px var(--spacer-gap-s00, 0px);
+}
 .user-controls .icon-user-rating-like {
   flex-shrink: 0;
   width: 21px;
@@ -349,9 +357,6 @@
   position: relative;
   overflow: visible;
 }
-button span.label {
-  color:#3A3AFF !important;
-}
 
 
 
@@ -359,29 +364,10 @@ button span.label {
 
 
 .user-controls .impression.disabled {
-    opacity: 1;
+    opacity: 0.5;
     pointer-events: none;
   }
   
 .user-controls .impression-button.active {
-background-color: #3A3AFF !important;
-}
-
-
-.user-controls .impression-button.active {
-  background: var(--utility-blue-03, #3A3AFF);
-  border-radius: 3px;
-  border-style: solid;
-  border-color: var(--utility-blue-03, #3A3AFF);
-  border-width: 1px;
-  padding: 0px var(--spacer-gap-s04, 6px) 0px var(--spacer-gap-s00, 0px);
-}
-.user-controls .impression-button.active i {
-  filter: invert(300%) sepia(300%) saturate(300%) hue-rotate(360deg) brightness(300%) contrast(300%);
-}
-/* button span.label {
-  color: var(--inkw03) !important;
-} */
-.user-controls .impression-button.active span.label {
-  color: var(--inkw03) !important;
+background-color: #e0e0e0;
 }

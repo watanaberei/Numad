@@ -105,8 +105,6 @@ app.post('/api/impression', authenticateToken, async (req, res) => {
 });
 
 
-
-
 function handleImpression(user, store, action, storeId) {
   console.log('Handling impression:', { user: user._id, store: store._id, action, storeId });
 

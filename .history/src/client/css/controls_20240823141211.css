@@ -382,6 +382,6 @@ background-color: #3A3AFF !important;
 /* button span.label {
   color: var(--inkw03) !important;
 } */
-.user-controls .impression-button.active span.label {
+.user-controls .impression-button.active button span.label {
   color: var(--inkw03) !important;
 }

@@ -55,7 +55,7 @@ const UserScreen = {
                          
                         <div class="container">
                           <div id="postStores" class="postStores list"> 
-                            ${title.render('Nearby')}
+                            ${title.render('Around you')}
                           </div>
                         </div>
 

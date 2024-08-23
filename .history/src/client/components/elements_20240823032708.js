@@ -57,42 +57,15 @@ export const neubranchTag = {
   },
 };
 
-export const header = {
-  render: (text) => {
-    return `
-      <div class="headline">
-        <span class="header03">
-            <span class="header03 ink03 primary"> ${text}</span>
-            <!--<span class="header03 accent03 secondary"> $ {text}</span>-->
-        </span>
-      </div>
-      `;
-  },
-};
-
 export const title = {
   render: (text) => {
     return `
-      <div class="title">
-          <span class="text03 bold">
-              ${text}
-          </span>
-      </div>
-    `;
-  },
-};
-
-
-export const titleCounter = {
-  render: (text, count) => {
-    return `
-      <div class="title">
-          <span class="text03 bold">
-              ${text}
-          </span>
-      </div>
-      ${countParenthesis.render(count)}
-    `;
+            <div class="title">
+                <span class="text03 bold">
+                    ${text}
+                </span>
+            </div>
+            `;
   },
 };
 

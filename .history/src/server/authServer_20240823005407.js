@@ -44,8 +44,6 @@ app.post('/login', async (req, res) => {
   }
 });
 
-
-
 app.post('/api/impression', authenticateToken, async (req, res) => {
   console.log('Received impression request:', req.body);
   const { storeId, action } = req.body;
@@ -103,9 +101,6 @@ app.post('/api/impression', authenticateToken, async (req, res) => {
     res.status(500).json({ message: 'Error adding impression', error: error.message });
   }
 });
-
-
-
 
 function handleImpression(user, store, action, storeId) {
   console.log('Handling impression:', { user: user._id, store: store._id, action, storeId });

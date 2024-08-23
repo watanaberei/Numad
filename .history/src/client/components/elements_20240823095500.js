@@ -84,14 +84,13 @@ export const title = {
 
 
 export const titleCounter = {
-  render: (text, count) => {
+  render: (text) => {
     return `
       <div class="title">
           <span class="text03 bold">
               ${text}
           </span>
       </div>
-      ${countParenthesis.render(count)}
     `;
   },
 };

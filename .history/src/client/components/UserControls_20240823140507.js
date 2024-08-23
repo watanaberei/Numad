@@ -98,7 +98,7 @@ export const userControl = {
 
             <button class="impression-button dislike" onclick="storeActions.toggleImpression('${store.storeId}', 'dislike')">
               <i class="icon-user-rating-dislike-12px"></i>
-              <span class="label">${countDefault.render(count.countDislike)}</span>
+              <span class="label${countDefault.render(count.countDislike)}</span>
             </button> 
           </div>
         </div>
